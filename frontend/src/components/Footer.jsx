@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from '../assets/Images/wivana-logo-dark.png'
+// import Logo from '../assets/Images/wivana-logo-dark.png'
+import Logo from '../assets/Images/Nature Foot Care Logo.png'
 import { FaFacebookF } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { FaRegClock } from "react-icons/fa6";
@@ -12,7 +13,12 @@ const Footer = () => {
         <div className="container mx-auto px-4 ">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-32">
                 <div className="mb-4 md:mb-0 md:ml-32" >
-                    <img src={Logo} alt="Wivena logo" className='w-60 h-15 mt-24' data-aos="fade-up" data-aos-delay="200"/>
+                    <div className='flex items-center space-x-2' data-aos="fade-up" data-aos-delay="200" >
+                        {/* <img src={Logo} alt="Wivena logo" className='w-60 h-15 mt-24' data-aos="fade-up" data-aos-delay="200"/> */}
+                        <img src={Logo} alt="Nature foot care logo" className=' w-32 h-32 mt-8' />
+                        <p className='text-white text-3xl'>Nature Foot Care <br /> Ayurveda</p>
+                    </div>
+                    
                     <span className='hidden sm:block mt-8 font-sans text-white/70' data-aos="fade-up" data-aos-delay="200">Embrace the power of Ayurveda to restore, balance, <br /> revitalize your spirit.</span>
                     <span className='sm:hidden block mt-8 font-sans text-white/70'data-aos="fade-up" data-aos-delay="200">Embrace the power of Ayurveda to restore, balance, revitalize your spirit.</span>
                     <div className='flex mt-8 gap-4' data-aos="fade-up" data-aos-delay="300">
@@ -32,33 +38,33 @@ const Footer = () => {
                 </div>
                 
                 <div className="text-start ">
-                    <div className='mt-6 md:mt-36'>
-                        <h2 className='text-[18px] md:text-[24px] text-white'>Address</h2>
-                        <p className="mb-2 mt-6 text-white/70 font-sans">123 Wellness Way, Serenity City,</p>
-                        <p className="mb-8 text-white/70 font-sans">CA 90210 United States</p>
+                    <div className='mt-6 md:mt-40'>
+                        <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="700">Address</h2>
+                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">123 Wellness Way, Serenity City,</p>
+                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">CA 90210 United States</p>
                     </div>
                     <div>
-                        <h2 className='text-[18px] md:text-[24px] text-white'>Contact</h2>
-                        <p className="mb-2 mt-6 text-white/70 font-sans">+1(234)567890</p>
-                        <p className="mb-8 text-white/70 font-sans">email : info@wivana.com</p>
+                        <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="1000">Contact</h2>
+                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100">+1(234)567890</p>
+                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1200">email : info@wivana.com</p>
                     </div>
                 </div>
-                <div className='mr-32 mt-4 md:mt-24'>
+                <div className='mr-32 mt-4 md:mt-16'>
                     <div className='text-start'>
-                        <h2 className='text-[18px] md:text-[24px] text-white mb-6'>Explore</h2>
+                        <h2 className='text-[18px] md:text-[24px] text-white mb-6' data-aos="fade-up" data-aos-delay="1300">Explore</h2>
                         <ul className=''>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="/" className="text-white/70 font-sans hover:text-white ">Home</a>
+                                <a href="/" className="text-white/70 font-sans hover:text-white" Data-aos="fade-up" data-aos-delay="1400">Home</a>
                             </li>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="/about" className="text-white/70 font-sans hover:text-white">About</a>
+                                <a href="/about" className="text-white/70 font-sans hover:text-white" Data-aos="fade-up" data-aos-delay="1500">About</a>
                             </li>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="treatments" className="text-white/70 font-sans hover:text-white">Treatments</a>
+                                <a href="treatments" className="text-white/70 font-sans hover:text-white" Data-aos="fade-up" data-aos-delay="1600">Treatments</a>
                             </li>   
                             
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="contact" className="text-white/70 font-sans hover:text-white">Contact</a>
+                                <a href="contact" className="text-white/70 font-sans hover:text-white" Data-aos="fade-up" data-aos-delay="1700">Contact</a>
                             </li>
                             
                         </ul>
