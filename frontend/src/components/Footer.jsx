@@ -22,7 +22,7 @@ const Footer = () => {
                     <span className='hidden sm:block mt-8 font-sans text-white/70' data-aos="fade-up" data-aos-delay="200">Embrace the power of Ayurveda to restore, balance, <br /> revitalize your spirit.</span>
                     <span className='sm:hidden block mt-8 font-sans text-white/70'data-aos="fade-up" data-aos-delay="200">Embrace the power of Ayurveda to restore, balance, revitalize your spirit.</span>
                     <div className='flex mt-8 gap-4' data-aos="fade-up" data-aos-delay="300">
-                        <a href="#" className="text-white border bg-[#696969] border-white rounded-full p-2 hover:text-black hover:bg-white transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <a href="https://www.facebook.com/profile.php?id=61560584634925&mibextid=ZbWKwL" className="text-white border bg-[#696969] border-white rounded-full p-2 hover:text-black hover:bg-white transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                             <FaFacebookF />
                         </a>
                         <a href="#" className="text-white border bg-[#696969] border-white rounded-full p-2 hover:text-black hover:bg-white transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
@@ -40,13 +40,13 @@ const Footer = () => {
                 <div className="text-start ">
                     <div className='mt-6 md:mt-40'>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="700">Address</h2>
-                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">123 Wellness Way, Serenity City,</p>
-                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">CA 90210 United States</p>
+                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">8A Vajira Road, Colombo 04,</p>
+                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">Sri Lanka</p>
                     </div>
                     <div>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="1000">Contact</h2>
-                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100">+1(234)567890</p>
-                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1200">email : info@wivana.com</p>
+                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100">+94 74 261 0334</p>
+                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1200">email : ayurvedafootcarenewnature@gmail.com</p>
                     </div>
                 </div>
                 <div className='mr-32 mt-4 md:mt-16'>
