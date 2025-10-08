@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import HeroSection from '../components/HeroSection'
 import HeroImage from "../assets/images/contact_hero.jpg"
 import FaqSection from '../components/FaqSection'
-import FaqImage from "../assets/images/faqnew.png"
+import FaqImage from "../assets/images/faqsectionj.jpg"
 import Footer from '../components/Footer'
 import ContactSection from '../components/contact/contactSection'
 import GoogleMapComponent from '../components/contact/googleMap'
@@ -54,37 +54,38 @@ const contact = () => {
       <div data-aos="fade-up" data-aos-delay="300">
         <FaqSection
           faqImage={FaqImage}
-          faqs={[
+           imageHeight="700px"
+         faqs={[
             {
-              question: "What is Wivana's approach to wellness?",
+              question: "What is Nature Foot Care Ayurveda’s approach to wellness?",
               answer:
-                "Wivana embraces the ancient principles of Ayurveda, offering personalized treatments that balance the mind, body, and spirit through natural remedies and holistic practices.",
+                "We embrace the timeless principles of Ayurveda, offering personalized treatments that restore balance to the mind, body, and spirit. Using natural remedies and holistic practices, our therapies promote relaxation, healing, and long-term well-being.",
             },
             {
-              question: "What services does Wivana offer?",
+              question: "Are the treatments safe and natural?",
               answer:
-                "Wivana offers a range of services including Abhyanga massage, Shirodhara therapy, Panchakarma detox programs, Ayurvedic facials, and wellness consultations, all designed to promote overall health.",
+                "Yes, all our therapies are rooted in Ayurveda and use only herbal oils, natural remedies, and safe practices, making them gentle yet highly effective.",
             },
             {
-              question: "Is a consultation required before my first treatment?",
+              question: "What should I wear during the treatment?",
               answer:
-                "Yes, we recommend a consultation prior to your first visit. This allows our practitioners to assess your unique dosha and wellness goals, ensuring a personalized treatment plan.",
+                "We provide comfortable attire and towels as needed. For most therapies, loose clothing is recommended to help you relax.",
             },
             {
-              question: "How can I book a treatment at Wivana",
+              question: "Can the treatments help with stress and body pain?",
               answer:
-                "You can book your treatment by visiting our website and clicking the  button, or by calling our reception team directly for assistance.",
+                "Absolutely. Our Ayurvedic massages and therapies are designed to relieve muscle tension, improve circulation, calm the mind, and ease stress-related discomfort.",
             },
             {
-              question: "How can I book a treatment at Wivana",
+              question: "How are treatments personalized?",
               answer:
-                "You can book your treatment by visiting our website and clicking the  button, or by calling our reception team directly for assistance.",
+                "Before each session, our practitioners understand your unique needs and health goals. Based on Ayurvedic principles, the treatment is customized with suitable oils, techniques, and duration.",
             },
             {
-              question: "How can I book a treatment at Wivana",
+              question: "Is Ayurveda only for people with health issues?",
               answer:
-                "You can book your treatment by visiting our website and clicking the  button, or by calling our reception team directly for assistance.",
-            }
+                "Not at all! Ayurveda is for everyone. While it helps manage specific concerns, it is also a wonderful way to maintain balance, improve energy, and enjoy overall wellness.",
+            },
           ]}
         />
       </div>

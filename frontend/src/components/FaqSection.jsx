@@ -1,16 +1,17 @@
-import React from 'react';
-import { useState } from 'react';
-import Image from 'react/jsx-runtime';
+import React from "react";
+import { useState } from "react";
+import Image from "react/jsx-runtime";
 
-export default function FaqSection({ 
+export default function FaqSection({
   subtitle = "FAQs",
   title = "Frequently Asked Questions",
   faqImage,
-  faqs = []
+  faqs = [],
+  imageHeight
 }) {
   // Simple accordion implementation
   const [openIndex, setOpenIndex] = useState(null);
-  
+
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -18,13 +19,13 @@ export default function FaqSection({
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:items-start">
-        
         {/* Left Image */}
         <div className="w-full overflow-hidden rounded-2xl shadow-lg">
           <img
             src={faqImage}
             alt="FAQ Illustration"
             className="object-cover w-full h-full"
+            style={{ height: imageHeight, width: '100%' }}
           />
         </div>
 
@@ -35,9 +36,7 @@ export default function FaqSection({
             {subtitle}
           </p>
           {/* Title */}
-          <h2 className="text-6xl font-semi-bold mb-13">
-            {title}
-          </h2>
+          <h2 className="text-6xl font-semi-bold mb-13">{title}</h2>
 
           {/* Custom Accordion */}
           <div className="w-full">
@@ -49,7 +48,7 @@ export default function FaqSection({
                 >
                   {faq.question}
                   <span className="transform transition-transform duration-200">
-                    {openIndex === index ? '−' : '+'}
+                    {openIndex === index ? "−" : "+"}
                   </span>
                 </button>
                 {openIndex === index && (
@@ -63,5 +62,5 @@ export default function FaqSection({
         </div>
       </div>
     </section>
-  )
+  );
 }

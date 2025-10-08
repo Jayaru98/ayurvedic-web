@@ -42,12 +42,12 @@ const Hero = () => {
 
           <div className="pl-4 md:pl-40" data-aos="flip-up" data-aos-delay="600">
             <h1 className="hidden md:block text-3xl md:text-[80px] text-white mb-6 mx-auto">
-              Experience Holistic <br /> Healing and Serenity with <br /> Ayurveda at nature Foot care and Ayurvedic Wellness
+              Rebalance Your Mind, Body & Spirit with Ayurveda
             </h1>
             <h1 className="md:hidden text-[40px] text-white mb-6 mx-auto" data-aos="fade-up" data-aos-delay="400">Experience Holistic Healing and Serenity with Ayurveda at Wivana</h1>
           </div>
           <div className='ml-4 md:ml-40'>
-            <p className='text-white/60 font-sans' data-aos="fade-up" data-aos-delay="400">Experience the transformative power of Ayurveda at nature foot care and Ayurvedic Wellness-your sanctuary for holistic wellness, <br />rejuvenation, and inner peace</p>
+            <p className='text-white/60 font-sans' data-aos="fade-up" data-aos-delay="400">Step into a sanctuary of natural healing. At Nature Foot Care and Ayurvedic Wellness, <br /> We bring you authentic Ayurvedic therapies designed for relaxation, rejuvenation, and inner harmony.</p>
           </div>
           <div className='ml-4 md:ml-40 font-sans mt-4 md:mt-2 py-2 px-6 bg-[#5C9269] hover:bg-white hover:text-black rounded-full text-white cursor-pointer' data-aos="fade-up" data-aos-delay="500">
             

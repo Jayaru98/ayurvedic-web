@@ -38,7 +38,7 @@ export default function ContactSection() {
                 className="border-b outline-none px-2 py-1"
               />
               <input
-                type="text"
+                type="tel"
                 placeholder="phone number"
                 className="border-b outline-none px-2 py-1"
               />
@@ -66,15 +66,18 @@ export default function ContactSection() {
   <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 md:left-6 md:translate-x-0 md:ml-20 lg:ml-35 bg-white shadow-lg rounded-lg p-4 space-y-2 text-gray-700 w-4/5 md:w-auto">
     <p className="flex items-center gap-2">
       <MapPin size={18} className="text-green-600" />
-      123 Wellness Road Serenity City
+      No. 50/9, B/G/1, Collingwood Housing Scheme, Collingwood Place, Wellawatta, Colombo-6
+ 
+      
+
     </p>
     <p className="flex items-center gap-2">
       <Phone size={18} className="text-green-600" />
-      +1(234)567890
+      +94 74 261 0334
     </p>
     <p className="flex items-center gap-2">
       <Mail size={18} className="text-green-600" />
-      info@wivana.com
+      ayurvedafootcarenewnature@gmail.com
     </p>
   </div>
 </div>

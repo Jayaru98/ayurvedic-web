@@ -10,14 +10,14 @@ const IntroSection = () => {
              Our Services
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-green-950 leading-tight mb-6">
-            Experience Authentic <br/> Ayurvedic Treatments for <br/>Mind, Body & Spirit
+            Experience the Healing Power of Authentic Ayurveda
           </h2>
         </div>
 
         {/* Right Content */}
         <div>
           <p className="text-lg text-gray-700 leading-relaxed">
-            At Nature Foot Care and Ayurvedic Wellness, we offer time-tested Ayurvedic therapies designed to restore balance, relieve stress, and rejuvenate your entire being. Each treatment is tailored to your unique needs, helping you achieve inner harmony, natural healing, and lasting wellness.
+            At Nature Foot Care & Ayurvedic Wellness, we bring you a curated range of therapies rooted in ancient Ayurvedic traditions. Each treatment is designed to relax the body, calm the mind, and awaken the spirit.
           </p>
         </div>
       </div>

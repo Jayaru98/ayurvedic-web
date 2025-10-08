@@ -43,15 +43,15 @@ const Testimonials = () => {
 
   return (
     <div className="min-h-screen bg-amber-50">
-        <div className='pl-4 md:pl-40 text-[#6B9A75] md:pt-24' data-aos="fade-up" data-aos-delay="200">
-            <p className='flex'><FiPlusCircle className=' w-5 h-5'/>&nbsp; TESTIMONIALS</p>
-        </div>
+        <div className='text-center text-[#6B9A75] md:pt-16' data-aos="fade-up" data-aos-delay="200">
+    <p className='flex justify-center items-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; TESTIMONIALS</p>
+</div>
 
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-6 md:mb-12" data-aos="fade-up" data-aos-delay="400">
-            <h1 className="text-[32px] md:text-[56px] md:pl-40 text-[#112025]">What Our Customer Say</h1>
-          </div>  
-        </div>
+  <div className="flex justify-center items-center mb-6 md:mb-12" data-aos="fade-up" data-aos-delay="400">
+    <h1 className="text-[32px] md:text-[56px] text-[#112025] text-center">What Our Customer Say</h1>
+  </div>  
+</div>
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-6 mr-6 md:ml-32 md:mr-32">
           {testimonials.map((testimonial) => (

@@ -6,9 +6,7 @@ import { FaRegEnvelope } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { NavLink } from 'react-router-dom';
-
 import MobileMenu from './mobileMenu';
-
 const Header = () => {
   const getLinkClass = ({ isActive }) => {
     return isActive
@@ -26,12 +24,11 @@ const Header = () => {
       sessionStorage.setItem('whatsapp_welcome_sent', 'true');
     }
   }, []);
-
   return (
     <>
-        <div className='flex justify-between items-center p-6 md:ml-28 mr-28'>
+        <div className='flex justify-between items-center p-4 md:p-6 md:ml-28 mr-28'>
             {/* Logo */}
-            <img src={Logo} alt="Nature Foot care logo" className='md:hidden w-10 h-10' />
+            <img src={Logo} alt="Nature Foot care logo" className='md:hidden w-20 h-20' />
             <MobileMenu />
             
             <div className="hidden md:flex items-center space-x-4" >
@@ -39,7 +36,7 @@ const Header = () => {
                 <a href="https://www.facebook.com/profile.php?id=61560584634925&mibextid=ZbWKwL" className="text-white border border-white rounded-full p-2 hover:text-black hover:bg-white">
                     <FaFacebookF className=''/>
                 </a>
-                <a href="#" className="text-white hover:text-black border border-white rounded-full p-2 hover:bg-white">
+                <a href="https://www.instagram.com/footcareayurveda?igsh=MXZ4bmtlYmZqaXF0cg==" className="text-white hover:text-black border border-white rounded-full p-2 hover:bg-white">
                     <FiInstagram className=''/>
                 </a>
             </div>
@@ -51,22 +48,19 @@ const Header = () => {
                 <span className='font-normal mt-2 font-sans'>+94 74 261 0334</span>
             </div>
         </div>
-
         <hr className='hidden md:block border-white/60 border-[0.1px] w-[calc(100% - 64px)] ml-28 mr-28 -mt-4 -mb-4' data-aos="fade-up"/>
-
       {/* Navigation Bar */}
       <nav className="flex justify-between items-center p-6 ml-28 mr-28" data-aos="fade-up">
         <div className="flex items-center space-x-2">
           {/* Logo  */}
           <img src={Logo} alt="NAture foot care logo" className=' hidden md:block w-32 h-32' />
-          <p className='text-white text-3xl'>Nature Foot Care <br /> Ayurveda</p>
+          <p className='text-white hidden md:block md:text-3xl'>Nature Foot Care <br /> Ayurveda</p>
         </div>
-
         <div className="hidden md:flex space-x-8 font-sans">
           <NavLink to="/" className={getLinkClass} end>Home</NavLink>
           <NavLink to="/about" className={getLinkClass}>About</NavLink>
           <NavLink to="/treatments" className={getLinkClass}>Treatments</NavLink>
-          <NavLink to="/blog" className={getLinkClass}>Blog</NavLink>
+          
           <NavLink to="/contact" className={getLinkClass}>Contact</NavLink>
         </div>
         <div>
@@ -84,5 +78,4 @@ const Header = () => {
     </>
   )
 }
-
 export default Header

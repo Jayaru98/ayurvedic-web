@@ -25,7 +25,7 @@ const Footer = () => {
                         <a href="https://www.facebook.com/profile.php?id=61560584634925&mibextid=ZbWKwL" className="text-white border bg-[#696969] border-white rounded-full p-2 hover:text-black hover:bg-white transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                             <FaFacebookF />
                         </a>
-                        <a href="#" className="text-white border bg-[#696969] border-white rounded-full p-2 hover:text-black hover:bg-white transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <a href="https://www.instagram.com/footcareayurveda?igsh=MXZ4bmtlYmZqaXF0cg==" className="text-white border bg-[#696969] border-white rounded-full p-2 hover:text-black hover:bg-white transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                             <FiInstagram />
                         </a>
                     </div>
@@ -40,8 +40,8 @@ const Footer = () => {
                 <div className="text-start ">
                     <div className='mt-6 md:mt-40'>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="700">Address</h2>
-                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">8A Vajira Road, Colombo 04,</p>
-                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">Sri Lanka</p>
+                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">No. 50/9, B/G/1, Collingwood Housing Scheme, Collingwood Place, Wellawatta,</p>
+                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">Colombo-6,Sri Lanka</p>
                     </div>
                     <div>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="1000">Contact</h2>
