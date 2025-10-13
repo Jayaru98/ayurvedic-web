@@ -54,7 +54,7 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           {/* Logo  */}
           <img src={Logo} alt="NAture foot care logo" className=' hidden md:block w-32 h-32' />
-          <p className='text-white hidden md:block md:text-3xl'>Nature Foot Care <br /> Ayurveda</p>
+          {/* <p className='text-white hidden md:block md:text-3xl'>Nature Foot Care <br /> Ayurveda</p> */}
         </div>
         <div className="hidden md:flex space-x-8 font-sans">
           <NavLink to="/" className={getLinkClass} end>Home</NavLink>
