@@ -7,9 +7,11 @@ import "@fontsource/philosopher/700.css";
 import Treatments from "./pages/treatments";
 
 import About from "./pages/About";
+import FloatingWhatsapp from "./components/FloatingWhatsapp";
 const App = () => {
   return (
     <div>
+      <FloatingWhatsapp />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/treatments" element={<Treatments />} />

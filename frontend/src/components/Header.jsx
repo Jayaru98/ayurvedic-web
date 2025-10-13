@@ -7,6 +7,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { NavLink } from 'react-router-dom';
 import MobileMenu from './mobileMenu';
+
 const Header = () => {
   const getLinkClass = ({ isActive }) => {
     return isActive
@@ -78,4 +79,5 @@ const Header = () => {
     </>
   )
 }
+
 export default Header
