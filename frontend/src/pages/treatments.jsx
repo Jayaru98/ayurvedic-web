@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
 import DetailsCard from "../components/treatments/detailsCard";
 import Service1 from "../assets/images/footMassage.jpg";
-import Service2 from "../assets/images/footMassage2.png";
-import Service3 from "../assets/images/facemassage.jpg";
-import Service4 from "../assets/images/nasnakarma.png";
+import Service2 from "../assets/images/foot-massage1.png";
+import Service3 from "../assets/images/face-massage.png";
+import Service4 from "../assets/images/nasya.png";
 import Service5 from "../assets/images/shirod.png";
-import Service6 from "../assets/images/vasti1.png";
-import Service7 from "../assets/images/fish.png";
+import Service6 from "../assets/images/vasti.png";
+import Service7 from "../assets/images/Fish3.png";
 import Service8 from "../assets/images/steamn.png";
-import Service9 from "../assets/images/ped.png";
-import Service10 from "../assets/images/mancu.png";
+import Service9 from "../assets/images/pedicure.png";
+import Service10 from "../assets/images/manicure.png";
 import HeroBackground from "../assets/images/treatmenthero.webp";
 import WhyChooseUs from "../components/whyChooseUs";
 import Icon1 from "../assets/images/icons-UGGEC4D_4.png";
@@ -32,13 +33,15 @@ import { FiSearch, FiX } from "react-icons/fi";
 const treatments = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredTreatments, setFilteredTreatments] = useState([]);
+  const location = useLocation();
 
   // All treatments data
-  const allTreatments = [
+  // All treatments data
+  const treatments = [
     {
       id: 1,
       title: "Signature Foot Massage (Oil Massage)",
-      description: "A deeply relaxing oil massage focused on the feet to improve circulation, release tension, and restore natural energy flow. Perfect for stress relief and grounding.",
+      description: "Indulge in our Signature Foot Massage, a 60-minute rejuvenating experience priced at Rs. 3,000, designed to melt away stress and restore balance. This luxurious oil massage focuses on the feet, using premium, nourishing oils and expert techniques to enhance circulation, release deep-seated tension, and promote natural energy flow.",
       price: "Rs. 3000",
       duration: "1 hour",
       image: Service1,
@@ -46,7 +49,7 @@ const treatments = () => {
     {
       id: 2,
       title: "Luxury Foot Massage",
-      description: "An indulgent foot massage experience combining gentle pressure techniques with aromatic oils. Ideal for total relaxation and a touch of luxury.",
+      description: "Experience the ultimate indulgence with our Luxury Foot Massage, a deeply relaxing treatment that combines gentle pressure techniques with the soothing power of aromatic oils. This exquisite therapy is designed to melt away tension, improve circulation, and leave your feet feeling incredibly soft, refreshed, and revitalized. Perfect for those seeking total relaxation and a touch of luxury, this massage will transport you to a state of serene bliss.",
       price: "Rs. 3000",
       duration: "1 hour",
       image: Service2,
@@ -54,7 +57,7 @@ const treatments = () => {
     {
       id: 3,
       title: "Ayurvedic Face Massage",
-      description: "A rejuvenating Ayurvedic facial massage using herbal oils that nourish the skin, improve circulation, and bring out a natural glow. Helps relieve facial tension and promotes youthful radiance.",
+      description: "Discover the ancient secrets of beauty with our Ayurvedic Face Massage. This rejuvenating therapy uses specially selected herbal oils to deeply nourish the skin, improve blood circulation, and enhance your natural radiance. Beyond its cosmetic benefits, it helps relieve facial tension, reduce puffiness, and promote a youthful glow, leaving your skin feeling supple, smooth, and revitalized. Experience a holistic approach to facial care that calms the mind and invigorates the senses.",
       price: "Rs. 2000",
       duration: "1 hour",
       image: Service3,
@@ -62,7 +65,7 @@ const treatments = () => {
     {
       id: 4,
       title: "Nasya Karma (Oil & Steam Therapy)",
-      description: "An Ayurvedic detox treatment where herbal oil and steam are applied through the nasal passages. Known to cleanse the sinuses, relieve headaches, improve breathing, and promote mental clarity.",
+      description: "Embark on a profound detoxification journey with Nasya Karma, an ancient Ayurvedic therapy involving the gentle application of herbal oil and steam through the nasal passages. This powerful treatment is renowned for its ability to cleanse the sinuses, alleviate chronic headaches, improve respiratory function, and enhance mental clarity. By purifying the upper respiratory tract, Nasya Karma helps to balance the doshas, reduce allergies, and promote a sense of lightness and well-being, making it ideal for those seeking relief from congestion and mental fog.",
       price: "Rs. 1500",
       duration: "30 minutes",
       image: Service4,
@@ -70,7 +73,7 @@ const treatments = () => {
     {
       id: 5,
       title: "Shirodhara",
-      description: "A signature Ayurvedic therapy where a continuous stream of warm herbal oil is poured gently over the forehead. Effective for stress, anxiety, insomnia, and chronic headaches. Provides deep mental relaxation and tranquility.",
+      description: "Indulge in the profound tranquility of Shirodhara, a signature Ayurvedic therapy where a continuous, gentle stream of warm herbal oil is poured rhythmically over the forehead, specifically targeting the 'third eye' chakra. This deeply meditative treatment is highly effective in alleviating stress, anxiety, insomnia, and chronic headaches. It calms the nervous system, promotes mental clarity, and induces a state of deep relaxation and tranquility, leaving you feeling profoundly peaceful and rejuvenated.",
       price: "Rs. 4000",
       duration: "30 min / 45 min / 1 hour",
       image: Service5,
@@ -78,7 +81,7 @@ const treatments = () => {
     {
       id: 6,
       title: "Vasti",
-      description: "Relieves stiffness and pain with warm herbal oils, deeply nourishing joints and muscles.",
+      description: "Experience targeted relief with Vasti, an Ayurvedic therapy that effectively alleviates stiffness and pain using warm herbal oils. This specialized treatment deeply nourishes joints and muscles, promoting flexibility and reducing discomfort. Whether you're dealing with chronic pain, muscle soreness, or joint stiffness, Vasti provides profound therapeutic benefits, restoring comfort and mobility to your body.",
       price: "Rs. 1500",
       duration: "45 minutes",
       image: Service6,
@@ -86,15 +89,15 @@ const treatments = () => {
     {
       id: 7,
       title: "Fish Therapy",
-      description: "Gentle Garra rufa fish exfoliate dead skin, leaving feet soft, smooth, and refreshed.",
+      description: "Immerse your feet in the unique and natural exfoliation experience of Fish Therapy. Tiny Garra rufa fish gently nibble away dead skin cells, leaving your feet incredibly soft, smooth, and thoroughly refreshed. This therapeutic and ticklish treatment not only provides excellent exfoliation but also stimulates circulation, offering a truly distinctive and rejuvenating pedicure experience.",
       price: "Rs. 1500",
       duration: "45 minutes",
       image: Service7,
     },
     {
       id: 8,
-      title: "Stream Bath",
-      description: "Herbal steam detoxifies, opens pores, and relaxes muscles for a light, rejuvenated feeling.",
+      title: "Steam Bath",
+      description: "Rejuvenate your body and mind with our invigorating Steam Bath. Infused with therapeutic herbs, this detoxifying steam treatment opens pores, purifies the skin, and deeply relaxes muscles. The gentle warmth promotes circulation, releases toxins, and eases tension, leaving you with a profound sense of lightness, clarity, and renewed energy. It's the perfect way to unwind and revitalize your entire being.",
       price: "Rs. 1500",
       duration: "45 minutes",
       image: Service8,
@@ -102,7 +105,7 @@ const treatments = () => {
     {
       id: 9,
       title: "Pedicure",
-      description: "Cleanses, exfoliates, and nourishes feet, leaving them soft, fresh, and beautiful.",
+      description: "Treat your feet to the ultimate pampering with our luxurious Pedicure. This comprehensive treatment cleanses, exfoliates, and deeply nourishes your feet, addressing everything from rough skin to tired muscles. Our skilled technicians will meticulously care for your nails and cuticles, leaving your feet feeling incredibly soft, fresh, and beautifully groomed. Step out with confidence and comfort, ready to take on the world.",
       price: "Rs. 3000",
       duration: "45 minutes",
       image: Service9,
@@ -110,7 +113,7 @@ const treatments = () => {
     {
       id: 10,
       title: "Manicure",
-      description: "Shapes, polishes, and revitalizes hands, giving nails a healthy, elegant look.",
+      description: "Indulge in our exquisite Manicure service, designed to shape, polish, and revitalize your hands and nails. Our expert technicians will meticulously care for your cuticles, buff your nails to perfection, and apply your choice of polish, ensuring a flawless finish. This treatment not only enhances the aesthetic appeal of your hands but also deeply nourishes and moisturizes, leaving them feeling soft, smooth, and elegantly groomed. Experience the perfect blend of beauty and relaxation.",
       price: "Rs. 3000",
       duration: "45 minutes",
       image: Service10,
@@ -125,19 +128,33 @@ const treatments = () => {
     });
     
     // Initialize with all treatments
-    setFilteredTreatments(allTreatments);
+    setFilteredTreatments(treatments);
   }, []);
 
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        // Use a timeout to ensure the element is rendered before scrolling
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    }
+  }, [location.hash]);
+  
   // Search function
   useEffect(() => {
+    const lowercasedSearchTerm = searchTerm.toLowerCase();
     if (searchTerm === "") {
-      setFilteredTreatments(allTreatments);
+      setFilteredTreatments(treatments);
     } else {
-      const filtered = allTreatments.filter(treatment =>
-        treatment.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        treatment.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        treatment.price.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        treatment.duration.toLowerCase().includes(searchTerm.toLowerCase())
+      const filtered = treatments.filter(treatment =>
+        treatment.title.toLowerCase().includes(lowercasedSearchTerm) ||
+        treatment.description.toLowerCase().includes(lowercasedSearchTerm) ||
+        treatment.price.toLowerCase().includes(lowercasedSearchTerm) ||
+        treatment.duration.toLowerCase().includes(lowercasedSearchTerm)
       );
       setFilteredTreatments(filtered);
     }
@@ -187,25 +204,25 @@ const treatments = () => {
           <div className="mt-3 text-sm text-gray-600">
             {searchTerm ? (
               <span>
-                Showing {filteredTreatments.length} of {allTreatments.length} treatments
+                Showing {filteredTreatments.length} of {treatments.length} treatments
                 {searchTerm && <span className="font-medium"> for "{searchTerm}"</span>}
               </span>
             ) : (
-              <span>Showing all {allTreatments.length} treatments</span>
+              <span>Showing all {treatments.length} treatments</span>
             )}
           </div>
         </div>
       </div>
 
       {/* Treatment Cards Grid */}
-      <div className="max-w-7xl mx-auto px-4 py-2">
+      <div id="treatment-cards" className="max-w-7xl mx-auto px-4 py-2">
         {filteredTreatments.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTreatments.map((treatment, index) => (
-              <div key={treatment.id} data-aos="fade-up" data-aos-delay={100 + (index * 50)}>
+              <div key={treatment.id} id={`treatment-${treatment.id}`} data-aos="fade-up" data-aos-delay={100 + (index * 50)}>
                 <DetailsCard
                   title={treatment.title}
-                  description={treatment.description}
+                  description={treatment.description} 
                   price={treatment.price}
                   duration={treatment.duration}
                   image={treatment.image}

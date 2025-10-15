@@ -2,13 +2,13 @@ import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa6'
 
 const FloatingWhatsapp = () => (
-    <a 
+    <a
         href="https://wa.me/94742610334?text=Hello%2C%20I%20would%20like%20to%20make%20an%20appointment."
         target='_blank'
         rel='noopener noreferrer'
         style={{
             position: 'fixed',
-            bottom: '160px',
+            bottom: '24px',
             right: '24px',
             zIndex: 1000,
             backgroundColor: '#25D366',

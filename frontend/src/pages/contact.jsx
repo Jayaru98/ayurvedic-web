@@ -36,7 +36,7 @@ const contact = () => {
       </div>
       
 <section className="bg-[#fdf8e9] py-10">
-  <div 
+  {/* <div 
     className="rounded-xl md:rounded-lg max-w-6xl mx-auto overflow-hidden shadow-lg px-4 sm:px-6 md:px-8"
     data-aos="zoom-in"
     data-aos-delay="200"
@@ -48,7 +48,7 @@ const contact = () => {
       zoom={15}
       height="500px"
     />
-  </div>
+  </div> */}
 </section>
       
       <div data-aos="fade-up" data-aos-delay="300">

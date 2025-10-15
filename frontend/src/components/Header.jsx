@@ -29,7 +29,7 @@ const Header = () => {
     <>
         <div className='flex justify-between items-center p-4 md:p-6 md:ml-28 mr-28'>
             {/* Logo */}
-            <img src={Logo} alt="Nature Foot care logo" className='md:hidden w-20 h-20' />
+            <img src={Logo} alt="Nature Foot care logo" className='md:hidden w-18 h-18' />
             <MobileMenu />
             
             <div className="hidden md:flex items-center space-x-4" >
@@ -54,7 +54,7 @@ const Header = () => {
       <nav className="flex justify-between items-center p-6 ml-28 mr-28" data-aos="fade-up">
         <div className="flex items-center space-x-2">
           {/* Logo  */}
-          <img src={Logo} alt="NAture foot care logo" className=' hidden md:block w-32 h-32' />
+          <img src={Logo} alt="NAture foot care logo" className=' hidden md:block w-24 h-24' />
           {/* <p className='text-white hidden md:block md:text-3xl'>Nature Foot Care <br /> Ayurveda</p> */}
         </div>
         <div className="hidden md:flex space-x-8 font-sans">

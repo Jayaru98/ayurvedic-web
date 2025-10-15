@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
-import ContactImage from "../../assets/images/contact-image.jpg";
+import ContactImage from "../../assets/images/contact-image1.png";
 
 export default function ContactSection() {
   return (

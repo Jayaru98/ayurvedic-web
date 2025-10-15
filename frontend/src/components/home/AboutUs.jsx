@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
-import Image1 from "../../assets/images/aboutus/abt_1.png";
-import Image3 from "../../assets/images/aboutus/about_5.jpg";
-import Image2 from "../../assets/images/aboutus/abt_2.png";
+import Image1 from "../../assets/images/aboutus/abt_3.png";
+import Image3 from "../../assets/images/aboutus/abt_7.png";
+import Image2 from "../../assets/images/aboutus/abt_6.png";
 import { FiPlusCircle } from "react-icons/fi";
 import { FiCheck } from "react-icons/fi";
 import AOS from "aos";
@@ -19,14 +19,14 @@ const AboutUs = () => {
             <img
               src={Image1}
               alt="Ayurvedic ingredients"
-              className="w-full max-w-[332px] ml-2 mr-2 md:ml-0 md:mr-0 md:w-[calc(20vw)] md:h-[calc(18vw)] min-w-[290px] min-h-[252px] rounded-2xl"
+              className="w-full max-w-[332px] ml-2 mr-2 md:ml-0 md:mr-0 md:w-[calc(20vw)] md:h-[calc(18vw)] min-w-[290px] min-h-[252px] rounded-2xl object-cover"
               data-aos="fade-up"
               data-aos-delay="200"
             />
             <img
               src={Image2}
               alt="Spa setting"
-              className="w-full max-w-[332px] ml-2 mr-2 md:ml-0 md:mr-0 md:w-[calc(20vw)] md:h-[calc(18vw)] min-w-[290px] min-h-[252px] rounded-2xl"
+              className="w-full max-w-[332px] ml-2 mr-2 md:ml-0 md:mr-0 md:w-[calc(20vw)] md:h-[calc(18vw)] min-w-[290px] min-h-[252px] rounded-2xl object-cover"
               data-aos="fade-up"
               data-aos-delay="200"
             />
