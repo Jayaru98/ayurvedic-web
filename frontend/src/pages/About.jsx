@@ -11,11 +11,13 @@ import Footer from "../components/Footer";
 const About = () => {
   return (
     <div>
-      <HeroSection
-        title="About Us"
-        breadcrumb={["Home", "About Us"]}
-        backgroundImage={BackgroundImage}
-      />
+      <div data-aos="fade-down">
+        <HeroSection
+          title="About Us"
+          breadcrumb={["Home", "About Us"]}
+          backgroundImage={BackgroundImage}
+        />
+      </div>
       <AboutUs />
 
       <CoreValues />

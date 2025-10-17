@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,6 +19,24 @@ import PackImage from "../../assets/images/packagesImage.png"
 
 
 const NatureFootCare = () => {
+  // track window width so we can compute slidesToShow and force Slider remount
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1200
+  );
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const onResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  // determine slidesToShow from current width (mobile => 1, web => 3)
+  const slidesToShow = windowWidth >= 1024 ? 3 : windowWidth >= 768 ? 2 : 1;
+  // create a small "bucket" key so slider remounts when crossing breakpoints
+  const sliderKey =
+    windowWidth < 768 ? "mobile" : windowWidth < 1024 ? "tablet" : "desktop";
+
   // Packages data
   const treatments = [
     {
@@ -109,7 +127,7 @@ const NatureFootCare = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow,
     slidesToScroll: 1,
     arrows: false,
     autoScroll: true,
@@ -118,7 +136,13 @@ const NatureFootCare = () => {
     adaptiveHeight: true,
     responsive: [
       {
-        breakpoint: 768, // md breakpoint
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
@@ -133,7 +157,7 @@ const NatureFootCare = () => {
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <p className="flex md:items-center md:justify-center">
+        <p className="flex items-center justify-center">
           <FiPlusCircle className=" w-5 h-5" />
           &nbsp; PACKAGES
         </p>
@@ -141,7 +165,7 @@ const NatureFootCare = () => {
 
       <div className="container mx-auto px-4">
         <div
-          className="flex justify-center items-center mb-6 md:mb-12"
+          className="flex justify-center text-center items-center mb-6 md:mb-12"
           data-aos="fade-up"
           data-aos-delay="400"
         >
@@ -269,7 +293,7 @@ const NatureFootCare = () => {
             </div> */}
 
             {/* Carousel */}
-            <Slider {...sliderSettings}>
+            {/* <Slider {...sliderSettings}>
               {treatments.map((treatment) => (
                 <div key={treatment.id} className="flex flex-col pl-8 pr-8 items-center justify-center py-4">
                   <img
@@ -280,24 +304,33 @@ const NatureFootCare = () => {
                   <h3 className="font-bold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
                     {treatment.name}
                   </h3>
-                  {/* <p>
-                    {treatment.description}</p> */}
                   <p className="text-[#696969] text-sm mb-2 line-clamp-2">
                       {treatment.description}
                   </p>
-                  {/* <p className="text-[#696969] text-sm">
-                    <span className="font-semibold">Duration:</span>{" "}
-                    {treatment.duration}
-                  </p>
-                  <p className="text-[#6B9A75] font-bold text-md mt-1">
-                    {treatment.price}
-                  </p> */}
-                  {/* </p> */}
-                  
                 </div>
               ))}
-              
-            </Slider>
+            </Slider> */}
+            <Slider key={sliderKey} ref={sliderRef} {...sliderSettings}>
+        {treatments.map((treatment) => (
+          <div
+            key={treatment.id}
+            className="flex flex-col pl-8 pr-8 items-center justify-center py-4"
+          >
+            <img
+              src={treatment.image}
+              alt={treatment.name}
+              className="w-full h-56 md:h-64 object-cover flex mx-auto rounded-xl shadow-md mb-4"
+            />
+            <h3 className="font-bold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
+              {treatment.name}
+            </h3>
+            <p className="text-[#696969] text-sm mb-2 line-clamp-2">
+              {treatment.description}
+            </p>
+          </div>
+        ))}
+      </Slider>
+
             {/* Call to Action */}
             <div className="max-w-4xl mx-auto mt-6 text-center">
               <Link

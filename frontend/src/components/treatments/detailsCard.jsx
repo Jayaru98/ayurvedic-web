@@ -26,8 +26,9 @@ export default function DetailsCard({
           
           <div className="w-full h-px bg-gray-200 my-3"></div>
           
-          <div className="flex items-center justify-between">
-            <p className="font-medium text-base"><span className="font-thin text-xs">Starting from</span> {price}</p>
+          <div className="">
+            <p className="font-medium text-base"><span className="font-thin text-xs">Starting from</span></p>
+            <p className="font-medium text-base">{price}</p>
             
           </div>
         </div>

@@ -44,7 +44,7 @@ const Hero = () => {
             <h1 className="hidden md:block text-3xl md:text-[80px] text-white mb-6 mx-auto">
               Rebalance Your Mind, Body & Spirit with Ayurveda
             </h1>
-            <h1 className="md:hidden text-[40px] text-white mb-6 mx-auto" data-aos="fade-up" data-aos-delay="400">Experience Holistic Healing and Serenity with Ayurveda at Wivana</h1>
+            <h1 className="md:hidden text-[40px] text-white mb-6 mx-auto" data-aos="fade-up" data-aos-delay="400">Rebalance Your Mind, Body & Spirit with Ayurveda</h1>
           </div>
           <div className='ml-4 md:ml-40'>
             <p className='text-white/60 font-sans' data-aos="fade-up" data-aos-delay="400">Step into a sanctuary of natural healing. At Nature Foot Care and Ayurvedic Wellness, <br /> We bring you authentic Ayurvedic therapies designed for relaxation, rejuvenation, and inner harmony.</p>

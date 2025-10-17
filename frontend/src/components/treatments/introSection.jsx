@@ -1,4 +1,6 @@
 import React from "react";
+import { FiPlusCircle } from "react-icons/fi";
+import { FiCheck } from "react-icons/fi";
 
 const IntroSection = () => {
   return (
@@ -6,10 +8,11 @@ const IntroSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
-          <p className="text-green-800 font-medium flex items-center gap-2 uppercase tracking-wide mb-4">
-             Our Services
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-green-950 leading-tight mb-6">
+          <p className="flex items-center justify-center">
+                        <FiPlusCircle className="mt1 w-5 h-5" />
+                        &nbsp; OUR SERVICES
+                      </p>
+          <h2 className="text-4xl md:text-5xl flex items-center mt-4 justify-center text-center font-bold text-green-950 leading-tight mb-6">
             Experience the Healing Power of Authentic Ayurveda
           </h2>
         </div>

@@ -46,7 +46,7 @@ const AboutUs = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <p className="flex">
+            <p className="flex items-center justify-center">
               <FiPlusCircle className="mt1 w-5 h-5" />
               &nbsp; ABOUT US
             </p>
@@ -60,7 +60,7 @@ const AboutUs = () => {
               <h1 className="hidden md:block text-[56px] text-[#112025] font-medium">
                 Sanctuary for Ayurvedic <br /> Healing and Wellness
               </h1>
-              <h1 className="md:hidden text-[32px] text-[#112025] font-medium">
+              <h1 className="md:hidden text-[32px] text-[#112025] flex justify-center text-center font-medium">
                 Sanctuary for Ayurvedic Healing and Wellness
               </h1>
             </div>
@@ -78,12 +78,12 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="mt-6" data-aos="fade-up" data-aos-delay="400">
-              <h2 className="md:ml-12 text-[18px] mb-5 md:text-[24px] md:flex">
-                <FiCheck className="md:hidden border mb-4 p-[2px] w-7 h-7 md:p-1 md:w-10 md:h-7 rounded-full  text-[#5C9269] mr-4" />
-                Ayurvedic Exspanertise
+              <h2 className="md:ml-12 text-[18px] mb-5 md:text-[24px] flex">
+                <FiCheck className="md:hidden border mb-4 p-1  mt-1 w-5 h-5 rounded-full  text-[#5C9269] mr-4" />
+                Ayurvedic Expertise
               </h2>
               <span className="md:flex font-sans text-[#696969] text-[16px] mt-3">
-                <FiCheck className="hidden md:block border p-[2px] w-6 h-6 md:p-1 md:w-10 md:h-7 rounded-full  text-[#5C9269] mr-4" />{" "}
+                <FiCheck className="hidden md:block border  md:w-17 md:h-6 p-1 rounded-full  text-[#5C9269] mr-4" />{" "}
                 With years of experience and deep knowledge of Ayurveda, our
                 practitioners bring you personalized treatments designed to
                 restore harmony between mind, body, and spirit. From soothing

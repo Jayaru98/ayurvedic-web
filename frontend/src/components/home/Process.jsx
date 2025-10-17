@@ -23,7 +23,7 @@ const Process = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <p className="flex">
+            <p className="flex items-center justify-center">
               <FiPlusCircle className="mt1 w-5 h-5" />
               &nbsp; OUR PROCESS
             </p>
@@ -37,7 +37,7 @@ const Process = () => {
               <h1 className="hidden md:block text-[56px] text-[#112025] font-medium">
                 Holistic Steps to Wellness and Healing
               </h1>
-              <h1 className="md:hidden text-[32px] text-[#112025] font-medium">
+              <h1 className="md:hidden flex justify-center items-center text-center text-[32px] text-[#112025] font-medium">
                 Holistic Steps to Wellness and Healing
               </h1>
             </div>

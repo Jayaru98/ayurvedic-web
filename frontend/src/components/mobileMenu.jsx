@@ -20,12 +20,8 @@ const mobileMenu = () => {
                 <div className='px-2 pt-16 pb-3 text-left space-y-1 sm:px-3'>
                     <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="/">Home</a>
                     <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="/about">About</a>
-                    <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="#">Contact</a>
-                    <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="#">Treatment</a>
-                    <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="#">Blogs</a>
-                    <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="#">Testimonials</a>
-                    <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="#">settings</a>
-
+                    <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="/treatments">Treatment</a>
+                    <a className='text-black font-semibold hover:text-teal-400 block px-3 py-2 rounded-md transition-color duration-200' href="/contact">Contact</a>
                 </div>
             </div>
         )}

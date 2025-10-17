@@ -48,17 +48,17 @@ const Footer = () => {
                         <h2 className='text-[18px] md:text-[24px] text-white mt-8 mb-6' data-aos="fade-up" data-aos-delay="1300">Explore</h2>
                         <ul className=''>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="/" className="text-white/70 font-sans hover:text-white" Data-aos="fade-up" data-aos-delay="1400">Home</a>
+                                <a href="/" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1400">Home</a>
                             </li>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="/about" className="text-white/70 font-sans hover:text-white" Data-aos="fade-up" data-aos-delay="1500">About</a>
+                                <a href="/about" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1500">About</a>
                             </li>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="treatments" className="text-white/70 font-sans hover:text-white" Data-aos="fade-up" data-aos-delay="1600">Treatments</a>
+                                <a href="/treatments" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1600">Treatments</a>
                             </li>   
                             
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="contact" className="text-white/70 font-sans hover:text-white" Data-aos="fade-up" data-aos-delay="1700">Contact</a>
+                                <a href="/contact" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1700">Contact</a>
                             </li>
                             <li>
                                 <div className='flex mt-10 gap-4' data-aos="fade-up" data-aos-delay="1800">

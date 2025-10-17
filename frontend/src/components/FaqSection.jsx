@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import Image from "react/jsx-runtime";
+import { FiCheck } from "react-icons/fi";
+import { FiPlusCircle } from "react-icons/fi";
+
 
 export default function FaqSection({
   subtitle = "FAQs",
@@ -32,11 +35,12 @@ export default function FaqSection({
         {/* Right Content */}
         <div className="md:pt-0">
           {/* Subtitle */}
-          <p className="text-sm uppercase tracking-wide mb-2 text-green-700">
+          <p className="text-sm flex items-center justify-center md:justify-start uppercase tracking-wide mb-2 text-green-700">
+            <FiPlusCircle className="mt1 w-5 h-5" /> &nbsp;
             {subtitle}
           </p>
           {/* Title */}
-          <h2 className="text-6xl font-semi-bold mb-13">{title}</h2>
+          <h2 className="text-6xl flex items-center justify-center md:justify-start text-center md:text-start font-semi-bold mb-13">{title}</h2>
 
           {/* Custom Accordion */}
           <div className="w-full">
