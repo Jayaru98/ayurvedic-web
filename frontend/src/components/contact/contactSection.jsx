@@ -12,31 +12,37 @@ export default function ContactSection() {
     message: "",
   })
 
-  const handleChange = (e) =>
-    setForm((s) => ({ ...s, [e.target.name]: e.target.value }));
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm((prev) => ({ ...prev, [name]: value }));
+  }  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-    const templateParams = {
-      user_name: `${form.firstName} ${form.lastName}`,
-      user_email: form.email,
-      user_phone: form.phone,
-      message: form.message,
-    };
-
-    try{
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
-      alert('Email sent successfully!');
-      setForm({ firstName: "", lastName: "", email: "", phone: "", message: "" })
-    }catch(error){
-      console.error('Email send error:', error);
-      alert('Error sending email. Please try again.')
-    }
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        ...form,
+        to_email: "denverma7@gmail.com",
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    )
+    .then(() => {
+      alert("Thank you for your message! We will get back to you soon.")
+      setForm({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+      })
+    })
+    .catch((error) => {
+      alert('There was and error sending your message. Please try again later.')
+      console.log(error)
+    })
   };
 
 return (
