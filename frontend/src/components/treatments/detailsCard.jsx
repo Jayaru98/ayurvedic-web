@@ -10,7 +10,16 @@ export default function DetailsCard({
 }) {
   return (
     <div className="relative w-full h-auto md:h-[500px] rounded-xl overflow-hidden shadow-lg">
-      {/* Background image */}
+      {/* Mobile image - visible only on mobile */}
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-[200px] object-cover md:hidden rounded-t-xl"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      />
+
+      {/* Desktop background image - visible only on desktop */}
       <img
         src={image}
         alt={title}
@@ -20,7 +29,7 @@ export default function DetailsCard({
       />
 
       {/* Overlay Card */}
-      <div className="relative md:absolute md:bottom-0 bg-white/95 backdrop-blur-md rounded-bl-sm shadow-xl w-full">
+      <div className="relative md:absolute md:bottom-0 bg-white/95 backdrop-blur-md rounded-b-xl md:rounded-bl-sm shadow-xl w-full">
         <div className="p-4">
           <h2 className="text-lg font-semibold mb-2" data-aos="fade-up" data-aos-delay="400">{title}</h2>
           <p className="text-black font-serif text-xs mb-3" data-aos="fade-up" data-aos-delay="500">{duration}</p>

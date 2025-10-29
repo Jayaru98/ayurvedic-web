@@ -69,7 +69,8 @@ return (
               </div>
               <div className="flex flex-col mb-10">
                 <p className='text-[14px]'>Visit Us</p>
-                <p className='text-[14px]'>No. 50/9, B/G/1, Collingwood Housing Scheme,<br /> Collingwood Place, Wellawatta, Colombo-6</p>
+                <p className='text-[14px]'>57,W A Silva mawatha,
+Colombo 06 <br /> </p>
                 <p className='text-[12px] text-gray-400'>Schedule an appointment</p>
               </div>
             </div>
