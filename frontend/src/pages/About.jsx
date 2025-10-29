@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import AboutUs from "../components/home/AboutUs";
 import CoreValues from "../components/about/CoreValue";
-import Showcase from "../components/home/Showcase";
+import ShowcaseAbout from "../components/about/ShowcaseAbout";
 import FaqImage from "../assets/images/faqsectionj.jpg"
 
 import NatureFootCare from "../components/about/NatureFootCare";
@@ -24,8 +24,8 @@ const About = () => {
       <AboutUs />
 
       <CoreValues />
-      <Showcase />
       <NatureFootCare />
+      <ShowcaseAbout />
        <div data-aos="fade-up" data-aos-delay="300">
         <FaqSection
           faqImage={FaqImage}

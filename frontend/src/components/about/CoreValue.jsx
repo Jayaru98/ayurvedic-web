@@ -49,7 +49,7 @@ const CoreValues = () => {
       
       {/* Core Values Header */}
       <div className='pl-4 flex items-center justify-center text-[#6B9A75] pt-10 md:pt-24' data-aos="fade-up" data-aos-delay="100">
-        <p className='flex'><FiPlusCircle className=' w-5 h-5'/>&nbsp; CORE VALUE</p>
+        <p className='flex'><FiPlusCircle className=' w-5 h-5'/>&nbsp; CORE VALUES</p>
       </div>
       <div className="container mx-auto">
         <div className="flex justify-center text-center items-center md:mt-2 mb-4" data-aos="fade-up" data-aos-delay="200">

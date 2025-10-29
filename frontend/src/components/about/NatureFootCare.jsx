@@ -161,7 +161,7 @@
           >
             {/* <div className="border-l-4 border-[#696969] pl-4 py-2 rounded-xl shadow-md p-8"> */}
             <div className="pl-4 py-2 rounded-xl shadow-md p-8">
-             <p className="flex items-center justify-center text-[#6B9A75]">
+             <p className="flex items-center justify-center mt-5 mb-5 text-[#6B9A75]">
             <FiPlusCircle className=" w-5 h-5" />
             &nbsp; PACKAGES
           </p>

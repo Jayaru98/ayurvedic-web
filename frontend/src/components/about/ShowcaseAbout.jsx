@@ -1,10 +1,10 @@
 import React from 'react'
 import { FiPlusCircle } from "react-icons/fi";
-import Image1 from '../../assets/Images/showcase/show_3.png'
-import Image2 from '../../assets/Images/showcase/show-case-2.png'
-import Image4 from '../../assets/Images/showcase/show_2.png'
-import Image3 from '../../assets/Images/showcase/show_4.png'
-import Image5 from '../../assets/Images/showcase/show_6.png'
+import Image1 from '../../assets/Images/showcase/im1.png'
+import Image2 from '../../assets/Images/showcase/im7.png'
+import Image4 from '../../assets/Images/showcase/im3.png'
+import Image3 from '../../assets/Images/showcase/im6.png'
+import Image5 from '../../assets/Images/showcase/im2.png'
 
 const Showcase = () => {
   return (
