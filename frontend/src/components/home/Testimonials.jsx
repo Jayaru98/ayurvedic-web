@@ -14,28 +14,28 @@ const Testimonials = () => {
       id: 1,
       name: "Anura Wijesinghe",
       image: Testi1,
-      content: "The Ayurvedic massage I received was transformative. The serene environment and expert care left me feeling refreshed and balanced. Highly recommend this place!",
+      content: "The Ayurvedic massage I received was transformative. The serene environment and expert care left me feeling refreshed and balanced. Highly recommend this place! I’m already looking forward to my next visit to experience that same sense of peace and rejuvenation.",
       location : "Customer, Kandy"
     },
     {
       id: 2,
       name: "Nadeesha Perera",
       image: Testi2,
-      content: "The personalized treatments here are exceptional. The staff’s knowledge of Sri Lankan herbal remedies truly enhanced my wellness journey",
+      content: "The personalized treatments here are exceptional. The staff’s knowledge of Sri Lankan herbal remedies truly enhanced my wellness journey. I left feeling deeply revitalized and connected to a sense of natural harmony.",
       location : "Customer, Colombo"
     },
     {
       id: 3,
       name: "Ruwan Mendis",
       image: Testi3,
-      content: "A peaceful retreat with amazing foot care therapies. The natural setting and attentive staff made my experience unforgettable",
+      content: "A peaceful retreat with amazing foot care therapies. The natural setting and attentive staff made my experience unforgettable. I would gladly return to unwind and indulge in their soothing treatments again.",
       location : "Customer, Galle"
     },
     {
       id: 4,
       name: "Priyani Perera",
       image: Testi4,
-      content: "The Ayurvedic massage I received was truly transformative. The serene environment and expert care left me feeling refreshed and balanced. Highly recommend this place!",
+      content: "This Avyrvedic spa offers a perfect blend of relaxation and rejuvenation. The calming ambiance and skilled therapists made every moment feel truly restorative. It’s an ideal escape for anyone seeking balance and inner peace.",
       location : "Customer, Gampaha"
     }
   ];
@@ -69,7 +69,7 @@ const Testimonials = () => {
                   <p className="text-[#696969] font-medium md:font-normal font-sans mb-12">{testimonial.content}</p>
                   
                   <div className="flex items-center">
-                    <img src={testimonial.image} alt="" className='w-12 h-12 rounded-full'/>
+                    {/* <img src={testimonial.image} alt="" className='w-12 h-12 rounded-full'/> */}
                     <div>
                       <h3 className="font-normal text-[#5C9269] text-[18px] ml-2 font-sans">{testimonial.name}</h3>
                       <p className='font-sans text-[13px] text-black/50 ml-2'>{testimonial.location}</p>

@@ -8,7 +8,7 @@ const FloatingWhatsapp = () => (
         rel='noopener noreferrer'
         style={{
             position: 'fixed',
-            bottom: '24px',
+            bottom: '56px',
             right: '24px',
             zIndex: 1000,
             backgroundColor: '#25D366',

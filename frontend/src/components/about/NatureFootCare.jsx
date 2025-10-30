@@ -18,7 +18,7 @@ import Service10 from "../../assets/images/manicure.png";
 import PackImage from "../../assets/images/packagesImage.png"
 
 
-const NatureFootCare = () => {
+const NatureFootCare = ({ ctaText = "View Details" }) => {
   // track window width so we can compute slidesToShow and force Slider remount
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1200
@@ -165,25 +165,24 @@ const NatureFootCare = () => {
 
       <div className="container mx-auto px-4">
         <div
-          className="flex justify-center text-center items-center mb-6 md:mb-12"
+          className="flex justify-center text-center items-center mb-6 "
           data-aos="fade-up"
           data-aos-delay="400"
         >
           <h1 className="text-[32px] md:text-[56px] text-[#112025]">
-            New Nature Foot Care Ayurveda
+            Nature Foot Care - Our Packages
           </h1>
         </div>
       </div>
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-6 mr-6 md:ml-20 md:mr-32"> */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 mt-15 rounded-xl overflow-hidden px-4  sm:px-6">  
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2  rounded-xl overflow-hidden px-4  sm:px-6">  
         {/* About Section */}
-        <div className="max-w-4xl mr-0 mx-auto mb-16 ">
+        {/* <div className="max-w-4xl mr-0 mx-auto mb-16 ">
           <div
             className="border-b border-[#696969] pl-4 py-4 rounded-2xl md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none md:rounded-br-none shadow-md p-8 bg-white"
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            {/* <h2 className="text-2xl font-bold text-amber-900 mb-6 pb-2 border-b border-amber-200">About</h2> */}
             <div
               className="space-y-6 text-[#696969]"
               data-aos="fade-up"
@@ -228,11 +227,11 @@ const NatureFootCare = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Image Section */}
-        <div data-aos="fade-up" data-aos-delay="400">
+        {/* <div data-aos="fade-up" data-aos-delay="400">
           <img src={PackImage} alt=""  className="hidden md:block h-[90%] rounded-br-2xl rounded-tr-2xl object-cover"/>
-        </div>
+        </div> */}
         
       </div>
       {/* Packages Section */}
@@ -243,93 +242,34 @@ const NatureFootCare = () => {
         >
           {/* <div className="border-l-4 border-[#696969] pl-4 py-2 rounded-xl shadow-md p-8"> */}
           <div className="pl-4 py-2 rounded-xl shadow-md p-8">
-            <h2
+            {/* <h2
               className="text-2xl font-bold text-[#696969] mb-2 pb-2"
               data-aos="fade-up"
               data-aos-delay="400"
             >
               Packages
-            </h2>
-            {/* <p
-              className="text-[#6B9A75] mb-6 italic"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              All starting prices mentioned here
-            </p> */}
+            </h2> */}
 
-            {/* <div className="space-y-6">
-              {packages.map((treatment) => (
-                <div
-                  key={treatment.id}
-                  className="border-l-4 border-[#6B9A75] border-dotted pl-4"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <div
-                    className="flex flex-col md:flex-row md:items-center justify-between gap-6"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                  >
-                    <div>
-                      <h3 className="font-bold text-[#112015] text-lg">
-                        {treatment.name}
-                      </h3>
-                      {treatment.duration && (
-                        <p className="text-[#696969]">{treatment.duration}</p>
-                      )}
-                      {treatment.details && (
-                        <p className="text-[#696969]">{treatment.details}</p>
-                      )}
-                    </div>
-                    <div className="mt-2 md:mt-0">
-                      <span className="bg-amber-100 text-[#6B9A75] font-bold py-1 px-3 rounded-full">
-                        {"starting from " + treatment.price}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div> */}
-
-            {/* Carousel */}
-            {/* <Slider {...sliderSettings}>
-              {treatments.map((treatment) => (
-                <div key={treatment.id} className="flex flex-col pl-8 pr-8 items-center justify-center py-4">
-                  <img
-                    src={treatment.image}
-                    alt={treatment.name}
-                    className="w-68 h-68 md:w-76 md:h-76 object-cover flex mx-auto rounded-xl shadow-md mb-4"
-                  />
-                  <h3 className="font-bold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
-                    {treatment.name}
-                  </h3>
-                  <p className="text-[#696969] text-sm mb-2 line-clamp-2">
-                      {treatment.description}
-                  </p>
-                </div>
-              ))}
-            </Slider> */}
             <Slider key={sliderKey} ref={sliderRef} {...sliderSettings}>
-        {treatments.map((treatment) => (
-          <div
-            key={treatment.id}
-            className="flex flex-col pl-8 pr-8 items-center justify-center py-4"
-          >
-            <img
-              src={treatment.image}
-              alt={treatment.name}
-              className="w-full h-56 md:h-64 object-cover flex mx-auto rounded-xl shadow-md mb-4"
-            />
-            <h3 className="font-bold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
-              {treatment.name}
-            </h3>
-            <p className="text-[#696969] text-sm mb-2 line-clamp-2">
-              {treatment.description}
-            </p>
-          </div>
-        ))}
-      </Slider>
+                {treatments.map((treatment) => (
+                  <div
+                    key={treatment.id}
+                    className="flex flex-col pl-8 pr-8 items-center justify-center py-4"
+                  >
+                    <img
+                      src={treatment.image}
+                      alt={treatment.name}
+                      className="w-full h-56 md:h-64 object-cover flex mx-auto rounded-xl shadow-md mb-4"
+                    />
+                    <h3 className="font-bold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
+                      {treatment.name}
+                    </h3>
+                    <p className="text-[#696969] text-sm mb-2 line-clamp-2">
+                      {treatment.description}
+                    </p>
+                  </div>
+                ))}
+            </Slider>
 
             {/* Call to Action */}
             <div className="max-w-4xl mx-auto mt-6 text-center">
@@ -337,7 +277,7 @@ const NatureFootCare = () => {
                 to="/treatments#treatment-cards"
                 className="bg-[#175326] hover:bg-[#053f14] text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg cursor-pointer inline-block"
               >
-                  View Details
+                  {ctaText}
               </Link>
             </div>
           </div>

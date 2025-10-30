@@ -4,7 +4,7 @@ import { FiPlusCircle } from "react-icons/fi";
 
 const Process = () => {
   return (
-    <div className="min-h-screen bg-amber-50">
+    <div className="min-h-screen pb-12 bg-amber-50">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-0 md:mr-32 pb-12 md:pb-0">
         <div
           className="flex flex-col md:flex-row items-center justify-center md:justify-end mt-12 md:mt-12 order-2 md:order-1"
@@ -14,7 +14,7 @@ const Process = () => {
           <img
             src={Image1}
             alt="Woman receiving treatment"
-            className="w-full max-w-[390px] md:w-[80%] md:max-w-[800px] rounded-3xl md:ml-32 mr-4 md:mt-0 ml-4 object-cover"
+            className="w-full h-[90%] max-w-[390px] md:w-[70%] md:max-w-[700px] rounded-3xl md:ml-32 mr-4 md:mt-0 ml-4 object-cover"
           />
         </div>
         <div className="order-1 md:order-2 flex flex-col justify-center">

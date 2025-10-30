@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className='flex items-center space-x-2' data-aos="fade-up" data-aos-delay="200" >
                         {/* <img src={Logo} alt="Wivena logo" className='w-60 h-15 mt-24' data-aos="fade-up" data-aos-delay="200"/> */}
                         <img src={Logo} alt="Nature foot care logo" className=' w-28 h-28 md:w-32 md:h-32 mt-8 -ml-3' />
-                        <p className='text-white text-2xl md:text-3xl'>Nature Foot Care <br /> Ayurveda</p>
+                        <p className='text-white text-2xl md:text-3xl mt-5'>Nature Foot Care <br /> Ayurveda</p>
                     </div>
                     
                     {/* <span className='hidden sm:block mt-8 font-sans text-white/70' data-aos="fade-up" data-aos-delay="200">Embrace the power of Ayurveda to restore, balance, <br /> revitalize your spirit.</span> */}
@@ -35,9 +35,9 @@ const Footer = () => {
                 <div className="text-start">
                     <div className='mt-6 md:mt-20  '>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="700">Address</h2>
-                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">No. 50/9, B/G/1, Collingwood Housing Scheme,  </p>
-                        <p className="mb-2 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">Collingwood Place, Wellawatta, </p>
-                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900"> Colombo-6, Sri Lanka</p>
+                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">#57,W A Silva mawatha,  </p>
+                        <p className="mb-2 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">Colombo 06 </p>
+                        <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900"> Sri Lanka</p>
                     </div>
                     <div>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="1000">Contact</h2>
@@ -53,14 +53,14 @@ const Footer = () => {
                                 <a href="/" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1400">Home</a>
                             </li>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="/about" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1500">About</a>
+                                <a href="/about" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1500">About Us</a>
                             </li>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
                                 <a href="/treatments" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1600">Treatments</a>
                             </li>   
                             
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
-                                <a href="/contact" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1700">Contact</a>
+                                <a href="/contact" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1700">Contact Us</a>
                             </li>
                             <li>
                                 <div className='flex mt-10 gap-4' data-aos="fade-up" data-aos-delay="1800">
@@ -79,9 +79,19 @@ const Footer = () => {
             </div>
 
             
-            {/* <div className="mt-8 pt-6 border-t border-amber-800 text-center text-sm text-amber-400">
-            <p>© {new Date().getFullYear()} Wivana Ayurveda. All rights reserved.</p>
-            </div> */}
+            <div className="flex justify-between text-[8px] mt-8 pb-4 pt-6 border-t border-amber-800 text-center md:text-sm text-white/70">
+                <div>
+                    <p>© {new Date().getFullYear()} Nature Foot Care. All rights reserved.</p>
+                </div>
+                <div className='flex'>
+                <a href="#">Terms & Conditions &nbsp;&nbsp;</a>
+                <p>|</p>
+                <a href="#" className=' md:mt-0'>&nbsp; &nbsp; Privacy Policy</a>
+                </div>
+                <div className='text-[8px] md:text-sm'>
+                    <p className='md:mr-12'>Website Design & Developed By <a href="https://uvexzon.com/" className='text-amber-400'>Uvexzon</a></p>
+                </div>
+            </div>
         </div>
     </footer>
   )

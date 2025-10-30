@@ -21,7 +21,7 @@ const About = () => {
       <AboutUs />
 
       <CoreValues />
-      <NatureFootCare />
+      <NatureFootCare ctaText="View Details" />
       <Footer />
     </div>
   );
