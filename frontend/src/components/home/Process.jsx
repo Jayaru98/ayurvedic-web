@@ -4,7 +4,7 @@ import { FiPlusCircle } from "react-icons/fi";
 
 const Process = () => {
   return (
-    <div className="min-h-screen pb-12 bg-amber-50">
+    <div className="min-h-screen md:pb-12 bg-amber-50">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-0 md:mr-32 pb-12 md:pb-0">
         <div
           className="flex flex-col md:flex-row items-center justify-center md:justify-end mt-12 md:mt-12 order-2 md:order-1"

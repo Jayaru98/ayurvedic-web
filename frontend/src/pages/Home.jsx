@@ -62,7 +62,7 @@ const Home = () => {
           
         /> */}
         {/* FAQ Section */}
-        <div className="bg-amber-50 pb-10">
+        <div className="bg-amber-50 pb-10 pt-16 md:pt-12">
           <div
             className="pl-4  text-[#6B9A75]  md:pt-12"
             data-aos="fade-up"

@@ -43,7 +43,7 @@ const Testimonials = () => {
 
   return (
     <div className="min-h-screen bg-amber-50">
-        <div className='text-center text-[#6B9A75] md:pt-16' data-aos="fade-up" data-aos-delay="200">
+        <div className='text-center text-[#6B9A75] pt-6 md:pt-16' data-aos="fade-up" data-aos-delay="200">
     <p className='flex justify-center items-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; TESTIMONIALS</p>
 </div>
 

@@ -37,7 +37,7 @@ const Showcase = () => {
   };
 
   return (
-    <div className='bg-amber-50'>
+    <div className='bg-amber-50 pt-16 md:pt-24'>
         <div className='text-[#6B9A75] text-center' data-aos="fade-up" data-aos-delay="200">
             <p className='flex items-center justify-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; WELLNESS SHOWCASE</p>
         </div>

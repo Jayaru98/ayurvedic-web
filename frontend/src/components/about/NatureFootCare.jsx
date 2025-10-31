@@ -153,7 +153,7 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
   return (
     <div className="bg-amber-50 pb-10">
       <div
-        className="pl-4  text-[#6B9A75]  md:pt-12"
+        className="pl-4  text-[#6B9A75] md:pt-12"
         data-aos="fade-up"
         data-aos-delay="200"
       >
