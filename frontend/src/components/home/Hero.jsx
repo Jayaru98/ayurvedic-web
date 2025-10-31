@@ -49,11 +49,11 @@ const Hero = () => {
           <div className='ml-4 md:ml-40'>
             <p className='text-white/60 font-sans' data-aos="fade-up" data-aos-delay="400">Step into a sanctuary of natural healing. At Nature Foot Care and Ayurvedic Wellness, <br /> We bring you authentic Ayurvedic therapies designed for relaxation, rejuvenation, and inner harmony.</p>
           </div>
-          <div className='ml-4 md:ml-40 font-sans mt-4 md:mt-2 py-2 px-6 bg-[#5C9269] hover:bg-white hover:text-black rounded-full text-white cursor-pointer' data-aos="fade-up" data-aos-delay="500">
+          <div className='ml-4 md:ml-40  mt-4 md:mt-2 py-2 px-6 bg-[#5C9269] hover:bg-white hover:text-black rounded-full text-white cursor-pointer' data-aos="fade-up" data-aos-delay="500">
             
               <Link 
           to="/contact" 
-          className='inline-block font-sans py-2 px-6 bg-[#5C9269] hover:bg-white hover:text-black rounded-full text-white cursor-pointer'
+          className='inline-block py-2 px-6 bg-[#5C9269] hover:bg-white hover:text-black rounded-full text-white cursor-pointer'
         >
           Contact Us
         </Link>

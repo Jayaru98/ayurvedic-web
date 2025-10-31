@@ -4,7 +4,7 @@ import { FiPlusCircle } from "react-icons/fi";
 const MapSection = () => {
   return (
     <section className="px-6 md:px-20 py-0 bg-amber-50">
-       <div className='pl-4 flex items-center justify-center text-[#6B9A75] pt-4   md:pt-10' data-aos="fade-up" data-aos-delay="100">
+       <div className='pl-4 flex items-center justify-center text-[#6B9A75] pt-4 md:pt-10' data-aos="fade-up" data-aos-delay="100">
               <p className='flex mb-5'><FiPlusCircle className=' w-5 h-5'/>&nbsp; FIND US HERE</p>
             </div>
       <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">

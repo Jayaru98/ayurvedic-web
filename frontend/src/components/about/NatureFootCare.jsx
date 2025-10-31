@@ -264,7 +264,7 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
                     <h3 className="font-bold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
                       {treatment.name}
                     </h3>
-                    <p className="text-[#696969] text-sm mb-2 line-clamp-2">
+                    <p className="text-[#343929] text-sm mb-2 line-clamp-2">
                       {treatment.description}
                     </p>
                   </div>
@@ -275,7 +275,7 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
             <div className="max-w-4xl mx-auto mt-6 text-center">
               <Link
                 to="/treatments#treatment-cards"
-                className="bg-[#175326] hover:bg-[#053f14] text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg cursor-pointer inline-block"
+                className="bg-[#175326] hover:bg-[#053f14] text-white mb-9 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg cursor-pointer inline-block"
               >
                   {ctaText}
               </Link>

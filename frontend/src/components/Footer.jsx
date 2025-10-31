@@ -8,7 +8,6 @@ import { FaPhone } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa6";
 
 
-
 const Footer = () => {
   return (
     <footer className="bg-[#1D4026] ">
@@ -35,7 +34,7 @@ const Footer = () => {
                 <div className="text-start">
                     <div className='mt-6 md:mt-20  '>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="700">Address</h2>
-                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">#57,W A Silva mawatha,  </p>
+                        <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">No.57,W A Silva mawatha,  </p>
                         <p className="mb-2 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">Colombo 06 </p>
                         <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900"> Sri Lanka</p>
                     </div>
@@ -79,17 +78,17 @@ const Footer = () => {
             </div>
 
             
-            <div className="flex justify-between text-[8px] mt-8 pb-4 pt-6 border-t border-amber-800 text-center md:text-sm text-white/70">
+            <div className="md:flex md:justify-between mt-8 pb-4 pt-6 border-t border-[#BECC5B] text-center text-sm text-white/70">
                 <div>
                     <p>© {new Date().getFullYear()} Nature Foot Care. All rights reserved.</p>
                 </div>
-                <div className='flex'>
-                <a href="#">Terms & Conditions &nbsp;&nbsp;</a>
-                <p>|</p>
-                <a href="#" className=' md:mt-0'>&nbsp; &nbsp; Privacy Policy</a>
+                <div className='flex justify-center'>
+                <a href='/terms' className='mt-4 md:mt-0'>Terms & Conditions &nbsp;&nbsp;</a>
+                <p className='mt-4 md:mt-0'>|</p>
+                <a href="/privacy" className='mt-4 md:mt-0'>&nbsp; &nbsp; Privacy Policy</a>
                 </div>
-                <div className='text-[8px] md:text-sm'>
-                    <p className='md:mr-12'>Website Design & Developed By <a href="https://uvexzon.com/" className='text-amber-400'>Uvexzon</a></p>
+                <div className='mt-4 md:mt-0 ext-sm'>
+                    <p className='md:mr-12'>Website Design & Developed By <a href="https://uvexzon.com/" className='text-[#BECC5B]'>Uvexzon</a></p>
                 </div>
             </div>
         </div>

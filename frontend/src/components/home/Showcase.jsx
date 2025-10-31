@@ -67,8 +67,8 @@ const Showcase = () => {
                   <img src={Image2} alt="" className='w-[320px] h-[202.66px] md:w-[320px] md:h-[202.66px] lg:w-[403px] lg-h-[285.55px] rounded-2xl transition-transform duration-300 hover:shadow-lg hover:-translate-y-1' data-aos="fade-up" data-aos-delay="400"/>
               </div>
               <div className='mx-auto'>
-                  <img src={Image3} alt="" className='w-[320px] h-[202.66px] md:w-[320px] md:h-[250.66px] lg:w-[403px] lg-h-[320.55px] rounded-2xl mb-8 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1' data-aos="fade-up" data-aos-delay="400"/>
-                  <img src={Image4} alt="" className='w-[320px] h-[304px] md:w-[320px] md:h-[304px] lg:w-[403px] lg:h-[343.33px] rounded-2xl transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 object-cover' data-aos="fade-up" data-aos-delay="400"/>
+                  <img src={Image3} alt="" className='w-[320px] h-[202.66px] md:w-[320px] md:h-[250.66px] lg:w-[350px] lg-h-[300px] rounded-2xl mb-8 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1' data-aos="fade-up" data-aos-delay="400"/>
+                  <img src={Image4} alt="" className='w-[320px] h-[304px] md:w-[320px] md:h-[304px] lg:w-[400px] lg:h-[343.33px] rounded-2xl transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 object-cover' data-aos="fade-up" data-aos-delay="400"/>
               </div>
                <div className='mx-auto'>
                   <img src={Image5} alt="" className='w-[320px] h-[300px] md:w-[250px] md:h-[380.61px] lg:w-[403px] lg:h-[480.42px] rounded-2xl transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 object-cover' data-aos="fade-up" data-aos-delay="500"/>

@@ -47,9 +47,9 @@ export default function ContactSection() {
 
 return (
     <section className="bg-[#fdf8e9] py-10">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 mt-15 rounded-xl overflow-hidden px-2 sm:px-1">
+      <div className="max-w-6xl sm:mx-auto grid md:grid-cols-2 mt-15 rounded-xl overflow-hidden px-2 mr-2 sm:px-1">
         {/* Left Side - Contact details */}
-        <div className="bg-green-950 text-white p-8 flex flex-col rounded-t-3xl rounded-b-none md:rounded-l-3xl md:rounded-r-none justify-start gap-8">
+        <div className="bg-[#1D4026] text-white p-8 flex flex-col rounded-t-3xl rounded-b-none md:rounded-l-3xl md:rounded-r-none justify-start gap-8">
           <p className="uppercase text-sm tracking-widest flex items-center gap-2" data-aos="fade-up" data-aos-delay="500">
             <span className="text-lg">✚</span> Contact Us
           </p>
@@ -69,7 +69,7 @@ return (
               </div>
               <div className="flex flex-col mb-10">
                 <p className='text-[14px]'>Visit Us</p>
-                <p className='text-[14px]'>57,W A Silva mawatha,
+                <p className='text-[14px]'>No.57, W A Silva mawatha,
 Colombo 06 <br /> </p>
                 <p className='text-[12px] text-gray-400'>Schedule an appointment</p>
               </div>
@@ -163,7 +163,7 @@ Colombo 06 <br /> </p>
 
               <button 
                 type="submit"
-                className=" bg-green-900 hover:bg-[#09283B] text-white py-2 mt-6 rounded transition cursor-pointer" 
+                className=" bg-[#1D4026] hover:bg-[#343929] text-white py-2 mt-6 rounded transition cursor-pointer" 
                 data-aos="fade-up"
                 data-aos-delay="1100"
               >

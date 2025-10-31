@@ -19,14 +19,14 @@ const AboutUs = () => {
             <img
               src={Image1}
               alt="Ayurvedic ingredients"
-              className="w-full max-w-[332px] ml-2 mr-2 md:ml-0 md:mr-0 md:w-[calc(20vw)] md:h-[calc(18vw)] min-w-[290px] min-h-[252px] rounded-2xl object-cover"
+              className="w-full max-w-[332px] md:ml-0 md:mr-0 md:w-[calc(20vw)] md:h-[calc(18vw)] min-w-[290px] min-h-[252px] rounded-2xl object-cover"
               data-aos="fade-up"
               data-aos-delay="200"
             />
             <img
               src={Image2}
               alt="Spa setting"
-              className="w-full max-w-[332px] ml-2 mr-2 md:ml-0 md:mr-0 md:w-[calc(20vw)] md:h-[calc(18vw)] min-w-[290px] min-h-[252px] rounded-2xl object-cover"
+              className="w-full max-w-[332px] md:ml-0 md:mr-0 md:w-[calc(20vw)] md:h-[calc(18vw)] min-w-[290px] min-h-[252px] rounded-2xl object-cover"
               data-aos="fade-up"
               data-aos-delay="200"
             />
@@ -35,7 +35,7 @@ const AboutUs = () => {
           <img
             src={Image3}
             alt="Woman receiving treatment"
-            className="w-full h-64 ax-w-[332px] md:w-[calc(22vw)] md:h-[calc(38vw)] min-w-[252px] md:min-h-[530px] rounded-2xl mt-4 ml-2 mr-2 md:mt-0 md:ml-4 object-cover"
+            className="w-[calc(98%)] h-64 ax-w-[332px] md:w-[calc(22vw)] md:h-[calc(38vw)] min-w-[252px] md:min-h-[530px] rounded-2xl mt-4 ml-12 mr-12 md:mr-2 md:mt-0 md:ml-4 object-cover"
             data-aos="fade-up"
             data-aos-delay="300"
           />
@@ -81,7 +81,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="mt-6" data-aos="fade-up" data-aos-delay="400">
-              <h2 className="md:ml-12 text-[18px] mb-5 md:text-[24px] flex">
+              <h2 className=" text-[18px] mb-5 md:text-[24px] flex">
                 <FiCheck className="md:hidden border mb-4 p-1  mt-1 w-5 h-5 rounded-full  text-[#5C9269] mr-4" />
                 Ayurvedic Expertise
               </h2>

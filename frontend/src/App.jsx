@@ -8,6 +8,8 @@ import Treatments from "./pages/treatments";
 
 import About from "./pages/About";
 import FloatingWhatsapp from "./components/FloatingWhatsapp";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import Terms from "./components/Terms";
 const App = () => {
   return (
     <div>
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="/treatments" element={<Treatments />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
         
       </Routes>
     </div>
