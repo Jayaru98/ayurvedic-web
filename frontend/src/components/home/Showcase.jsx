@@ -37,12 +37,12 @@ const Showcase = () => {
   };
 
   return (
-    <div className='min-h-screen bg-amber-50'>
-        <div className='text-[#6B9A75] pt-12 md:pt-24 text-center' data-aos="fade-up" data-aos-delay="200">
+    <div className='bg-amber-50'>
+        <div className='text-[#6B9A75] text-center' data-aos="fade-up" data-aos-delay="200">
             <p className='flex items-center justify-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; WELLNESS SHOWCASE</p>
         </div>
 
-        <div className="container mx-auto pb-16">
+        <div className="container mx-auto pb-0 pt-0 md:pt-8">
           <div className="text-center mb-6 md:mb-16" data-aos="fade-up" data-aos-delay="400">
             <h1 className="text-[32px] md:text-[56px] text-[#112025]">
               Our Ayurvedic Experience

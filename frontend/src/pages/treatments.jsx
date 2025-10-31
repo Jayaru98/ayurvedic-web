@@ -43,7 +43,7 @@ const treatments = () => {
       title: "Signature Foot Massage (Oil Massage)",
       description: "Indulge in our Signature Foot Massage, a 60-minute rejuvenating experience priced at Rs. 3,000, designed to melt away stress and restore balance. This luxurious oil massage focuses on the feet, using premium, nourishing oils and expert techniques to enhance circulation, release deep-seated tension, and promote natural energy flow.",
       price: "Rs. 3000",
-      duration: "1 hour",
+      duration: "30 min / 45 min / 1 hour",
       image: Service1,
     },
     {
@@ -51,7 +51,7 @@ const treatments = () => {
       title: "Luxury Foot Massage",
       description: "Experience the ultimate indulgence with our Luxury Foot Massage, a deeply relaxing treatment that combines gentle pressure techniques with the soothing power of aromatic oils. This exquisite therapy is designed to melt away tension, improve circulation, and leave your feet feeling incredibly soft, refreshed, and revitalized. Perfect for those seeking total relaxation and a touch of luxury, this massage will transport you to a state of serene bliss.",
       price: "Rs. 3000",
-      duration: "1 hour",
+      duration: "30 min / 45 min / 1 hour",
       image: Service2,
     },
     {
@@ -59,7 +59,7 @@ const treatments = () => {
       title: "Ayurvedic Face Massage",
       description: "Discover the ancient secrets of beauty with our Ayurvedic Face Massage. This rejuvenating therapy uses specially selected herbal oils to deeply nourish the skin, improve blood circulation, and enhance your natural radiance. Beyond its cosmetic benefits, it helps relieve facial tension, reduce puffiness, and promote a youthful glow, leaving your skin feeling supple, smooth, and revitalized. Experience a holistic approach to facial care that calms the mind and invigorates the senses.",
       price: "Rs. 2000",
-      duration: "1 hour",
+      duration: "30 min / 45 min / 1 hour",
       image: Service3,
     },
     {
@@ -67,7 +67,7 @@ const treatments = () => {
       title: "Nasya Karma (Oil & Steam Therapy)",
       description: "Embark on a profound detoxification journey with Nasya Karma, an ancient Ayurvedic therapy involving the gentle application of herbal oil and steam through the nasal passages. This powerful treatment is renowned for its ability to cleanse the sinuses, alleviate chronic headaches, improve respiratory function, and enhance mental clarity. By purifying the upper respiratory tract, Nasya Karma helps to balance the doshas, reduce allergies, and promote a sense of lightness and well-being, making it ideal for those seeking relief from congestion and mental fog.",
       price: "Rs. 1500",
-      duration: "30 minutes",
+      duration: "30 min / 45 min / 1 hour",
       image: Service4,
     },
     {
@@ -83,7 +83,7 @@ const treatments = () => {
       title: "Vasti",
       description: "Experience targeted relief with Vasti, an Ayurvedic therapy that effectively alleviates stiffness and pain using warm herbal oils. This specialized treatment deeply nourishes joints and muscles, promoting flexibility and reducing discomfort. Whether you're dealing with chronic pain, muscle soreness, or joint stiffness, Vasti provides profound therapeutic benefits, restoring comfort and mobility to your body.",
       price: "Rs. 1500",
-      duration: "45 minutes",
+      duration: "30 min / 45 min / 1 hour",
       image: Service6,
     },
     {
@@ -91,7 +91,7 @@ const treatments = () => {
       title: "Fish Therapy",
       description: "Immerse your feet in the unique and natural exfoliation experience of Fish Therapy. Tiny Garra rufa fish gently nibble away dead skin cells, leaving your feet incredibly soft, smooth, and thoroughly refreshed. This therapeutic and ticklish treatment not only provides excellent exfoliation but also stimulates circulation, offering a truly distinctive and rejuvenating pedicure experience.",
       price: "Rs. 1500",
-      duration: "45 minutes",
+      duration: "30 min / 45 min / 1 hour",
       image: Service7,
     },
     {
@@ -99,7 +99,7 @@ const treatments = () => {
       title: "Steam Bath",
       description: "Rejuvenate your body and mind with our invigorating Steam Bath. Infused with therapeutic herbs, this detoxifying steam treatment opens pores, purifies the skin, and deeply relaxes muscles. The gentle warmth promotes circulation, releases toxins, and eases tension, leaving you with a profound sense of lightness, clarity, and renewed energy. It's the perfect way to unwind and revitalize your entire being.",
       price: "Rs. 1500",
-      duration: "45 minutes",
+      duration: "30 min / 45 min / 1 hour",
       image: Service8,
     },
     {
@@ -107,7 +107,7 @@ const treatments = () => {
       title: "Pedicure",
       description: "Treat your feet to the ultimate pampering with our luxurious Pedicure. This comprehensive treatment cleanses, exfoliates, and deeply nourishes your feet, addressing everything from rough skin to tired muscles. Our skilled technicians will meticulously care for your nails and cuticles, leaving your feet feeling incredibly soft, fresh, and beautifully groomed. Step out with confidence and comfort, ready to take on the world.",
       price: "Rs. 3000",
-      duration: "45 minutes",
+      duration: "30 min / 45 min / 1 hour",
       image: Service9,
     },
     {
@@ -115,7 +115,7 @@ const treatments = () => {
       title: "Manicure",
       description: "Indulge in our exquisite Manicure service, designed to shape, polish, and revitalize your hands and nails. Our expert technicians will meticulously care for your cuticles, buff your nails to perfection, and apply your choice of polish, ensuring a flawless finish. This treatment not only enhances the aesthetic appeal of your hands but also deeply nourishes and moisturizes, leaving them feeling soft, smooth, and elegantly groomed. Experience the perfect blend of beauty and relaxation.",
       price: "Rs. 3000",
-      duration: "45 minutes",
+      duration: "30 min / 45 min / 1 hour",
       image: Service10,
     },
   ];

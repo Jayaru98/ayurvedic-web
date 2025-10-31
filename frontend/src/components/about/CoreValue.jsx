@@ -45,38 +45,30 @@ const CoreValues = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-amber-50">
+    <div className="bg-amber-50">
       
       {/* Core Values Header */}
-          <div className='pl-4 flex items-center justify-center text-[#6B9A75] pt-10 md:pt-24' data-aos="fade-up" data-aos-delay="100">
-            <p className='flex'><FiPlusCircle className=' w-5 h-5'/>&nbsp; CORE VALUE</p>
-          </div>
-          <div className="container mx-auto">
-            <div className="flex justify-center text-center items-center md:mt-2 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <h1 className="text-[30px] md:text-[56px] pl-4  text-[#112025]">Holistic Steps to Wellness and Healing</h1>
-            </div>
-          </div>
-
-        
-        {/* Core Values Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ml-4 mr-4 md:ml-36 md:mr-40 pb-20">
-          {coreValues.map((value) => (
-            <div key={value.id} className="border border-gray-300 hover:border-gray-500 rounded-xl shadow-md p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" data-aos="fade-up">
-              {/* Icon */}
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 text-green-800/70" data-aos="fade-up" data-aos-delay="300">
-                {value.icon}
-              </div>
-              
-              {/* Title */}
-              <h3 className="text-[24px] font-medium text-[#112015] mb-4" data-aos="fade-up" data-aos-delay="400">{value.title}</h3>
-              
-              {/* Description */}
-              <p className="text-[#696969] font-sans text-[16px]" data-aos="fade-up" data-aos-delay="500">{value.description}</p>
-            </div>
-          ))}
+      <div className='pl-4 flex items-center justify-center text-[#6B9A75] pt-10 md:pt-24' data-aos="fade-up" data-aos-delay="100">
+        <p className='flex'><FiPlusCircle className=' w-5 h-5'/>&nbsp; CORE VALUES</p>
+      </div>
+      <div className="container mx-auto">
+        <div className="flex justify-center text-center items-center md:mt-2 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <h1 className="text-[30px] md:text-[56px] pl-4  text-[#112025]">Holistic Steps to Wellness and Healing</h1>
         </div>
-        
-      
+      </div>
+
+      {/* Core Values Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ml-4 mr-4 md:ml-36 md:mr-40 pb-10">
+        {coreValues.map((value) => (
+          <div key={value.id} className="border border-gray-300 hover:border-gray-500 rounded-xl shadow-md p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" data-aos="fade-up">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 text-green-800/70" data-aos="fade-up" data-aos-delay="300">
+              {value.icon}
+            </div>
+            <h3 className="text-[24px] font-medium text-[#112015] mb-4" data-aos="fade-up" data-aos-delay="400">{value.title}</h3>
+            <p className="text-[#696969] font-sans text-[16px]" data-aos="fade-up" data-aos-delay="500">{value.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

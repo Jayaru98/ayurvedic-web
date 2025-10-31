@@ -1,21 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Link } from "react-router-dom";
+  import React, { useEffect, useRef, useState } from "react";
+  import Slider from "react-slick";
+  import "slick-carousel/slick/slick.css";
+  import "slick-carousel/slick/slick-theme.css";
+  import { Link } from "react-router-dom";
 
-import { FiPlusCircle } from "react-icons/fi";
-import Service1 from "../../assets/images/footMassage.jpg";
-import Service2 from "../../assets/images/foot-massage1.png";
-import Service3 from "../../assets/images/face-massage.png";
-import Service4 from "../../assets/images/nasya.png";
-import Service5 from "../../assets/images/shirod.png";
-import Service6 from "../../assets/images/vasti.png";
-import Service7 from "../../assets/images/Fish6.png";
-import Service8 from "../../assets/images/steamn.png";
-import Service9 from "../../assets/images/pedicure.png";
-import Service10 from "../../assets/images/manicure.png";
-import PackImage from "../../assets/images/packagesImage.png"
+  import { FiPlusCircle } from "react-icons/fi";
+  import Service1 from "../../assets/images/footMassage.jpg";
+  import Service2 from "../../assets/images/foot-massage1.png";
+  import Service3 from "../../assets/images/face-massage.png";
+  import Service4 from "../../assets/images/nasya.png";
+  import Service5 from "../../assets/images/shirod.png";
+  import Service6 from "../../assets/images/vasti.png";
+  import Service7 from "../../assets/images/Fish6.png";
+  import Service8 from "../../assets/images/steamn.png";
+  import Service9 from "../../assets/images/pedicure.png";
+  import Service10 from "../../assets/images/manicure.png";
+  import PackImage from "../../assets/images/packagesImage.png"
 
 
 const NatureFootCare = ({ ctaText = "View Details" }) => {
@@ -25,130 +25,130 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
   );
   const sliderRef = useRef(null);
 
-  useEffect(() => {
-    const onResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
+    useEffect(() => {
+      const onResize = () => setWindowWidth(window.innerWidth);
+      window.addEventListener("resize", onResize);
+      return () => window.removeEventListener("resize", onResize);
+    }, []);
 
-  // determine slidesToShow from current width (mobile => 1, web => 3)
-  const slidesToShow = windowWidth >= 1024 ? 3 : windowWidth >= 768 ? 2 : 1;
-  // create a small "bucket" key so slider remounts when crossing breakpoints
-  const sliderKey =
-    windowWidth < 768 ? "mobile" : windowWidth < 1024 ? "tablet" : "desktop";
+    // determine slidesToShow from current width (mobile => 1, web => 3)
+    const slidesToShow = windowWidth >= 1024 ? 3 : windowWidth >= 768 ? 2 : 1;
+    // create a small "bucket" key so slider remounts when crossing breakpoints
+    const sliderKey =
+      windowWidth < 768 ? "mobile" : windowWidth < 1024 ? "tablet" : "desktop";
 
-  // Packages data
-  const treatments = [
-    {
-      id: 1,
-      name: "Signature Foot Massage (Oil Massage)",
-      image: Service1,
-      duration: "1 hour",
-      description: "A deeply relaxing oil massage focused on the feet to improve circulation, release tension, and restore natural energy flow. Perfect for stress relief and grounding.",
-      price: "3000 Rs",
-    },
-    {
-      id: 2,
-      name: "Luxury Foot Massage",
-      image: Service2,
-      description: "An indulgent foot massage experience combining gentle pressure techniques with aromatic oils. Ideal for total relaxation and a touch of luxury.",
-      duration: "1 hour",
-      price: "3000 Rs",
-    },
-    {
-      id: 3,
-      name: "Ayurvedic Face Massage",
-      image: Service3,
-      description: "A rejuvenating Ayurvedic facial massage using herbal oils that nourish the skin, improve circulation, and bring out a natural glow. Helps relieve facial tension and promotes youthful radiance.",
-      duration: "1 hour",
-      price: "2000 Rs",
-    },
-    {
-      id: 4,
-      name: "Nasya karma (Oil & Steam Therapy)",
-      image: Service4,
-      description: "An Ayurvedic detox treatment where herbal oil and steam are applied through the nasal passages. Known to cleanse the sinuses, relieve headaches, improve breathing, and promote mental clarity.",
-      duration: "Oil Massage by Steam, 30 min",
-      price: "1500 Rs",
-    },
-    {
-      id: 5,
-      name: "Shirodhara",
-      image: Service5,
-      description: "A signature Ayurvedic therapy where a continuous stream of warm herbal oil is poured gently over the forehead. Effective for stress, anxiety, insomnia, and chronic headaches. Provides deep mental relaxation and tranquility.",
-      duration: "30 min / 45 min / 1 hour",
-      details: "Head pain massage",
-      price: "4000 Rs",
-    },
-    {
-      id: 6,
-      name: "Vasti",
-      image: Service6,
-      description: "Relieves stiffness and pain with warm herbal oils, deeply nourishing joints and muscles.",
-      duration: "Oil heat → (with special oil)",
-      price: "Contact for pricing",
-    },
-    {
-      id: 7,
-      name: "Fish Therapy",
-      image: Service7,
-      description: "Gentle Garra rufa fish exfoliate dead skin, leaving feet soft, smooth, and refreshed.",
-      duration: "",
-      price: "1500 Rs",
-    },
-    {
-      id: 8,
-      name: "Steam Bath",
-      image: Service8,
-      description: "Herbal steam detoxifies, opens pores, and relaxes muscles for a light, rejuvenated feeling.",
-      duration: "",
-      price: "1500 Rs",
-    },
-    {
-      id: 9,
-      name: "Pedicure",
-      image: Service9,
-      description: "Cleanses, exfoliates, and nourishes feet, leaving them soft, fresh, and beautiful.",
-      duration: "",
-      price: "3000 Rs",
-    },
-    {
-      id: 10,
-      name: "Manicure",
-      image: Service10,
-      description: "Shapes, polishes, and revitalizes hands, giving nails a healthy, elegant look.",
-      duration: "",
-      price: "3000 Rs",
-    },
-  ];
-
-  // carousel settings
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow,
-    slidesToScroll: 1,
-    arrows: false,
-    autoScroll: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    adaptiveHeight: true,
-    responsive: [
+    // Packages data
+    const treatments = [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
+        id: 1,
+        name: "Signature Foot Massage (Oil Massage)",
+        image: Service1,
+        duration: "1 hour",
+        description: "A deeply relaxing oil massage focused on the feet to improve circulation, release tension, and restore natural energy flow. Perfect for stress relief and grounding.",
+        price: "3000 Rs",
       },
       {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
+        id: 2,
+        name: "Luxury Foot Massage",
+        image: Service2,
+        description: "An indulgent foot massage experience combining gentle pressure techniques with aromatic oils. Ideal for total relaxation and a touch of luxury.",
+        duration: "1 hour",
+        price: "3000 Rs",
       },
-    ],
-  };
+      {
+        id: 3,
+        name: "Ayurvedic Face Massage",
+        image: Service3,
+        description: "A rejuvenating Ayurvedic facial massage using herbal oils that nourish the skin, improve circulation, and bring out a natural glow. Helps relieve facial tension and promotes youthful radiance.",
+        duration: "1 hour",
+        price: "2000 Rs",
+      },
+      {
+        id: 4,
+        name: "Nasya karma (Oil & Steam Therapy)",
+        image: Service4,
+        description: "An Ayurvedic detox treatment where herbal oil and steam are applied through the nasal passages. Known to cleanse the sinuses, relieve headaches, improve breathing, and promote mental clarity.",
+        duration: "Oil Massage by Steam, 30 min",
+        price: "1500 Rs",
+      },
+      {
+        id: 5,
+        name: "Shirodhara",
+        image: Service5,
+        description: "A signature Ayurvedic therapy where a continuous stream of warm herbal oil is poured gently over the forehead. Effective for stress, anxiety, insomnia, and chronic headaches. Provides deep mental relaxation and tranquility.",
+        duration: "30 min / 45 min / 1 hour",
+        details: "Head pain massage",
+        price: "4000 Rs",
+      },
+      {
+        id: 6,
+        name: "Vasti",
+        image: Service6,
+        description: "Relieves stiffness and pain with warm herbal oils, deeply nourishing joints and muscles.",
+        duration: "Oil heat → (with special oil)",
+        price: "Contact for pricing",
+      },
+      {
+        id: 7,
+        name: "Fish Therapy",
+        image: Service7,
+        description: "Gentle Garra rufa fish exfoliate dead skin, leaving feet soft, smooth, and refreshed.",
+        duration: "",
+        price: "1500 Rs",
+      },
+      {
+        id: 8,
+        name: "Steam Bath",
+        image: Service8,
+        description: "Herbal steam detoxifies, opens pores, and relaxes muscles for a light, rejuvenated feeling.",
+        duration: "",
+        price: "1500 Rs",
+      },
+      {
+        id: 9,
+        name: "Pedicure",
+        image: Service9,
+        description: "Cleanses, exfoliates, and nourishes feet, leaving them soft, fresh, and beautiful.",
+        duration: "",
+        price: "3000 Rs",
+      },
+      {
+        id: 10,
+        name: "Manicure",
+        image: Service10,
+        description: "Shapes, polishes, and revitalizes hands, giving nails a healthy, elegant look.",
+        duration: "",
+        price: "3000 Rs",
+      },
+    ];
+
+    // carousel settings
+    const sliderSettings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow,
+      slidesToScroll: 1,
+      arrows: false,
+      autoScroll: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    };
 
   return (
     <div className="bg-amber-50 pb-10">
@@ -284,10 +284,10 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
           
         </div>
 
-      
-      {/* </div>     */}
-    </div>
-  );
-};
+        
+        {/* </div>     */}
+      </div>
+    );
+  };
 
-export default NatureFootCare;
+  export default NatureFootCare;
