@@ -1,5 +1,4 @@
 import React from 'react'
-// import Logo from '../assets/Images/wivana-logo-dark.png'
 import Logo from '../assets/Images/Nature Foot Care Logo.png'
 import { FaPhone } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa6";
@@ -26,12 +25,12 @@ const Header = () => {
     }
   }, []);
   return (
-    <>
+    <div>
         <div className='flex justify-between items-center p-4 md:p-6 md:ml-28 mr-28'>
             {/* Logo */}
             <img src={Logo} alt="Nature Foot care logo" className='md:hidden w-18 h-18' />
             <MobileMenu />
-            
+
             <div className="hidden md:flex items-center space-x-4" >
                 {/* Social Media Icons */}
                 <a href="https://www.facebook.com/profile.php?id=61560584634925&mibextid=ZbWKwL" className="text-white border border-white rounded-full p-2 hover:text-black hover:bg-white">
@@ -54,14 +53,13 @@ const Header = () => {
       <nav className="flex justify-between items-center p-6 ml-28 mr-28" data-aos="fade-up">
         <div className="flex items-center space-x-2">
           {/* Logo  */}
-          <img src={Logo} alt="NAture foot care logo" className=' hidden md:block w-24 h-24' />
+          <img src={Logo} alt="Nature foot care logo" className=' hidden md:block w-24 h-24' />
           {/* <p className='text-white hidden md:block md:text-3xl'>Nature Foot Care <br /> Ayurveda</p> */}
         </div>
         <div className="hidden md:flex space-x-8 font-sans">
           <NavLink to="/" className={getLinkClass} end>Home</NavLink>
           <NavLink to="/about" className={getLinkClass}>About Us</NavLink>
           <NavLink to="/treatments" className={getLinkClass}>Treatments</NavLink>
-          
           <NavLink to="/contact" className={getLinkClass}>Contact Us</NavLink>
         </div>
         <div>
@@ -76,7 +74,7 @@ const Header = () => {
           </a>
         </div>
       </nav>
-    </>
+    </div>
   )
 }
 

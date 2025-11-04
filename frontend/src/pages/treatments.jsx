@@ -41,7 +41,7 @@ const treatments = () => {
     {
       id: 1,
       title: "Signature Foot Massage (Oil Massage)",
-      description: "Indulge in our Signature Foot Massage, a 60-minute rejuvenating experience priced at Rs. 3,000, designed to melt away stress and restore balance. This luxurious oil massage focuses on the feet, using premium, nourishing oils and expert techniques to enhance circulation, release deep-seated tension, and promote natural energy flow.",
+      description: "The Signature Foot Massage is a rejuvenating Ayurvedic therapy that focuses on vital pressure points in the feet to restore energy flow and balance. Using warm herbal oils and rhythmic strokes, it relieves fatigue, improves circulation, and soothes the nervous system, leaving you relaxed, refreshed, and deeply revitalized from head to toe.",
       price: "Rs. 3000",
       duration: "30 min / 45 min / 1 hour",
       image: Service1,
@@ -49,7 +49,7 @@ const treatments = () => {
     {
       id: 2,
       title: "Luxury Foot Massage",
-      description: "Experience the ultimate indulgence with our Luxury Foot Massage, a deeply relaxing treatment that combines gentle pressure techniques with the soothing power of aromatic oils. This exquisite therapy is designed to melt away tension, improve circulation, and leave your feet feeling incredibly soft, refreshed, and revitalized. Perfect for those seeking total relaxation and a touch of luxury, this massage will transport you to a state of serene bliss.",
+      description: "The Luxury Foot Massage offers a blissful blend of relaxation and rejuvenation. Using aromatic essential oils and gentle Ayurvedic techniques, it soothes tired feet, improves blood circulation, and melts away stress. This indulgent treatment nourishes the skin, eases tension, and restores harmony to body and mind, leaving you feeling refreshed and renewed.",
       price: "Rs. 3000",
       duration: "30 min / 45 min / 1 hour",
       image: Service2,
@@ -57,7 +57,7 @@ const treatments = () => {
     {
       id: 3,
       title: "Ayurvedic Face Massage",
-      description: "Discover the ancient secrets of beauty with our Ayurvedic Face Massage. This rejuvenating therapy uses specially selected herbal oils to deeply nourish the skin, improve blood circulation, and enhance your natural radiance. Beyond its cosmetic benefits, it helps relieve facial tension, reduce puffiness, and promote a youthful glow, leaving your skin feeling supple, smooth, and revitalized. Experience a holistic approach to facial care that calms the mind and invigorates the senses.",
+      description: "The Ayurvedic Face Massage is a rejuvenating therapy that enhances natural glow and promotes youthful skin. Using warm herbal oils and gentle rhythmic strokes, it improves blood circulation, tones facial muscles, and reduces stress. This relaxing treatment detoxifies the skin, relieves tension, and restores radiant beauty, leaving your face refreshed and revitalized.",
       price: "Rs. 2000",
       duration: "30 min / 45 min / 1 hour",
       image: Service3,
@@ -65,7 +65,7 @@ const treatments = () => {
     {
       id: 4,
       title: "Nasya Karma (Oil & Steam Therapy)",
-      description: "Embark on a profound detoxification journey with Nasya Karma, an ancient Ayurvedic therapy involving the gentle application of herbal oil and steam through the nasal passages. This powerful treatment is renowned for its ability to cleanse the sinuses, alleviate chronic headaches, improve respiratory function, and enhance mental clarity. By purifying the upper respiratory tract, Nasya Karma helps to balance the doshas, reduce allergies, and promote a sense of lightness and well-being, making it ideal for those seeking relief from congestion and mental fog.",
+      description: "Nasakarma is a traditional Ayurvedic therapy that purifies and rejuvenates the head region. Medicated oils or herbal extracts are gently administered through the nostrils to clear sinus congestion, improve breathing, and enhance mental clarity. It helps relieve headaches, migraines, allergies, and stress while promoting overall balance and well-being.",
       price: "Rs. 1500",
       duration: "30 min / 45 min / 1 hour",
       image: Service4,
@@ -73,7 +73,7 @@ const treatments = () => {
     {
       id: 5,
       title: "Shirodhara",
-      description: "Indulge in the profound tranquility of Shirodhara, a signature Ayurvedic therapy where a continuous, gentle stream of warm herbal oil is poured rhythmically over the forehead, specifically targeting the 'third eye' chakra. This deeply meditative treatment is highly effective in alleviating stress, anxiety, insomnia, and chronic headaches. It calms the nervous system, promotes mental clarity, and induces a state of deep relaxation and tranquility, leaving you feeling profoundly peaceful and rejuvenated.",
+      description: "Shirodhara is a deeply relaxing Ayurvedic therapy where warm herbal oil is gently poured over the forehead in a continuous stream. This treatment calms the mind, relieves stress, anxiety, and insomnia, and enhances mental clarity. It also nourishes the scalp, improves sleep quality, and promotes emotional balance and overall wellness.",
       price: "Rs. 4000",
       duration: "30 min / 45 min / 1 hour",
       image: Service5,
@@ -81,7 +81,7 @@ const treatments = () => {
     {
       id: 6,
       title: "Vasti",
-      description: "Experience targeted relief with Vasti, an Ayurvedic therapy that effectively alleviates stiffness and pain using warm herbal oils. This specialized treatment deeply nourishes joints and muscles, promoting flexibility and reducing discomfort. Whether you're dealing with chronic pain, muscle soreness, or joint stiffness, Vasti provides profound therapeutic benefits, restoring comfort and mobility to your body.",
+      description: "Vasti is a powerful Ayurvedic therapy that involves administering warm medicated oils or herbal decoctions into the colon to cleanse and balance the body. It effectively removes toxins, strengthens the nervous system, and relieves joint pain, constipation, and lower back issues. Vasti promotes detoxification, nourishment, and overall vitality for improved health and well-being.",
       price: "Rs. 1500",
       duration: "30 min / 45 min / 1 hour",
       image: Service6,
@@ -89,7 +89,7 @@ const treatments = () => {
     {
       id: 7,
       title: "Fish Therapy",
-      description: "Immerse your feet in the unique and natural exfoliation experience of Fish Therapy. Tiny Garra rufa fish gently nibble away dead skin cells, leaving your feet incredibly soft, smooth, and thoroughly refreshed. This therapeutic and ticklish treatment not only provides excellent exfoliation but also stimulates circulation, offering a truly distinctive and rejuvenating pedicure experience.",
+      description: "Fish Therapy is a natural and refreshing treatment where tiny Garra Rufa fish gently exfoliate your feet by removing dead skin cells. This soothing process improves blood circulation, softens the skin, and promotes relaxation. It provides a unique, ticklish sensation that leaves your feet feeling smooth, clean, and revitalized with a healthy glow.",
       price: "Rs. 1500",
       duration: "30 min / 45 min / 1 hour",
       image: Service7,
@@ -97,7 +97,7 @@ const treatments = () => {
     {
       id: 8,
       title: "Steam Bath",
-      description: "Rejuvenate your body and mind with our invigorating Steam Bath. Infused with therapeutic herbs, this detoxifying steam treatment opens pores, purifies the skin, and deeply relaxes muscles. The gentle warmth promotes circulation, releases toxins, and eases tension, leaving you with a profound sense of lightness, clarity, and renewed energy. It's the perfect way to unwind and revitalize your entire being.",
+      description: "The Steam Bath is a traditional Ayurvedic detox therapy that opens pores and eliminates toxins through gentle herbal steam. It relaxes muscles, enhances blood circulation, and promotes deep cleansing of the skin. This rejuvenating treatment relieves stress, supports weight management, and leaves your body refreshed, revitalized, and glowing with renewed energy and vitality.",
       price: "Rs. 1500",
       duration: "30 min / 45 min / 1 hour",
       image: Service8,
@@ -105,7 +105,7 @@ const treatments = () => {
     {
       id: 9,
       title: "Pedicure",
-      description: "Treat your feet to the ultimate pampering with our luxurious Pedicure. This comprehensive treatment cleanses, exfoliates, and deeply nourishes your feet, addressing everything from rough skin to tired muscles. Our skilled technicians will meticulously care for your nails and cuticles, leaving your feet feeling incredibly soft, fresh, and beautifully groomed. Step out with confidence and comfort, ready to take on the world.",
+      description: "The Pedicure treatment nourishes and revitalizes your feet through cleansing, exfoliation, nail care, and gentle massage. Using herbal and aromatic products, it softens rough skin, improves circulation, and promotes relaxation. This soothing therapy leaves your feet feeling refreshed, smooth, and beautifully cared for, enhancing both comfort and appearance with a touch of luxury.",
       price: "Rs. 3000",
       duration: "30 min / 45 min / 1 hour",
       image: Service9,
@@ -113,7 +113,7 @@ const treatments = () => {
     {
       id: 10,
       title: "Manicure",
-      description: "Indulge in our exquisite Manicure service, designed to shape, polish, and revitalize your hands and nails. Our expert technicians will meticulously care for your cuticles, buff your nails to perfection, and apply your choice of polish, ensuring a flawless finish. This treatment not only enhances the aesthetic appeal of your hands but also deeply nourishes and moisturizes, leaving them feeling soft, smooth, and elegantly groomed. Experience the perfect blend of beauty and relaxation.",
+      description: "The Manicure treatment is a luxurious hand care therapy that nourishes and beautifies your nails and skin. It includes cleansing, exfoliation, nail shaping, cuticle care, and a soothing massage with rich herbal creams. This relaxing treatment improves blood circulation, softens the hands, and leaves them looking elegant, healthy, and perfectly polished.",
       price: "Rs. 3000",
       duration: "30 min / 45 min / 1 hour",
       image: Service10,

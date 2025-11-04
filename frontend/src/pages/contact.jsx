@@ -35,12 +35,10 @@ const contact = () => {
         <ContactSection />
       </div>
       
-<section className="bg-[#fdf8e9] py-10">
-  <MapSection />
-</section>
-      
-     
-      
+      <section className="bg-[#fdf8e9] py-10">
+        <MapSection />
+      </section>
+
       <div data-aos="fade" data-aos-delay="400">
         <Footer/>
       </div>

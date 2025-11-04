@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from '../assets/Images/Nature Foot Care Logo.png';
 
-const mobileMenu = () => {
+const mobileMenuNew = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -33,7 +33,7 @@ const mobileMenu = () => {
         </div>
         {isMenuOpen && (
             // <div className='md:hidden fixed inset-0 bg-green-900/90 z-10 animate-drop-in flex flex-col justify-center items-center'>
-            <div className='md:hidden fixed top-0 h-full pt-24  left-0 right-0 bg-green-900 z-50 animate-drop-in flex flex-col justify-start items-center'>
+            <div className='md:hidden fixed top-0 h-[700px] pt-24  left-0 right-0 bg-green-900 z-50 animate-drop-in flex flex-col justify-start items-center'>
                 <div className='flex justify-between'>
                     <a href="/" className="absolute top-4 left-4">
                         <img src={Logo} alt="Nature Foot care logo" className='w-18 h-18 z-50' />
@@ -47,7 +47,7 @@ const mobileMenu = () => {
                 </div>
                 {/* <div className='text-center text-[20px] space-y-2 sm:px-3'>
                 <div className='px-2 pt-2 pb-3 text-center text-[20px] space-y-2 sm:px-3'> */}
-                <div className='text-center text-[24px] mt-24 space-y-8 sm:px-3'>
+                <div className='text-center text-[24px] mt-16 space-y-8 sm:px-3'>
                     <a 
                         className={`font-semibold block transition-color duration-200 ${currentPath === '/' ? 'text-[#343929] px-20 py-1 border border-[#BECC5B] bg-[#ECD3B4] rounded-4xl' : 'text-white hover:text-teal-400'}`} 
                         href="/"
@@ -71,4 +71,4 @@ const mobileMenu = () => {
   )
 }
 
-export default mobileMenu
+export default mobileMenuNew

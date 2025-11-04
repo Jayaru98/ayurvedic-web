@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FiPlusCircle } from "react-icons/fi";
 import Testi from '../../assets/Images/testimonials/testi.svg';
 import Testi1 from "../../assets/images/testimonials/1b.png";
 import Testi2 from '../../assets/Images/testimonials/2g.png';
 import Testi4 from '../../assets/Images/testimonials/3g.png';
 import Testi3 from '../../assets/Images/testimonials/4b.png';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const Testimonials = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
+
   // Testimonials data
   const testimonials = [
     {
@@ -44,32 +66,42 @@ const Testimonials = () => {
   return (
     <div className="min-h-screen bg-amber-50">
         <div className='text-center text-[#6B9A75] pt-6 md:pt-16' data-aos="fade-up" data-aos-delay="200">
-    <p className='flex justify-center items-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; TESTIMONIALS</p>
-</div>
+            <p className='flex justify-center items-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; TESTIMONIALS</p>
+        </div>
 
         <div className="container mx-auto px-4">
-  <div className="flex justify-center items-center mb-6 md:mb-12" data-aos="fade-up" data-aos-delay="400">
-    <h1 className="text-[32px] md:text-[56px] text-[#112025] text-center">What Our Customer Say</h1>
-  </div>  
-</div>
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-6 mr-6 md:ml-32 md:mr-32">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white rounded-xl shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1" data-aos="fade-up" data-aos-delay="400">
-              {/* Customer Avatar */}
-              <div className="flex items-center mb-4">
-                {/* <div className="w-16 h-16 rounded-full bg-amber-200 flex items-center justify-center mr-4">
-                  <span className="text-xl font-bold text-amber-800">
-                    {testimonial.name.split(' ').map(n => n[0]).join('')}
-                    <img src={testimonial.image} alt="" className='w-8 h-8'/>
-                  </span>
-                </div> */}
-                <div>
-                  {/* Testimonial Content */}
+          <div className="flex justify-center items-center mb-6 md:mb-12" data-aos="fade-up" data-aos-delay="400">
+            <h1 className="text-[32px] md:text-[56px] text-[#112025] text-center">What Our Customer Say</h1>
+          </div>  
+        </div>
+        
+        {isMobile ? (
+          <div className="md:hidden px-4 mt-16" data-aos="fade-up" data-aos-delay="400">
+            <Slider {...sliderSettings}>
+              {testimonials.map((testimonial) => (
+                <div key={testimonial.id} className="px-2 pb-8">
+                  <div className="bg-white rounded-xl shadow-md p-6 h-full flex flex-col justify-between">
+                    <p className="text-[#696969] font-medium md:font-normal font-sans mb-12">
+                      {testimonial.content}
+                    </p>
+                    <div className="flex items-center mt-auto">
+                      <div>
+                        <h3 className="font-normal text-[#5C9269] text-[18px] ml-2 font-sans">{testimonial.name}</h3>
+                        <p className='font-sans text-[13px] text-black/50 ml-2'>{testimonial.location}</p>
+                      </div>
+                      <img src={Testi} alt="" className='w-18 h-18 ml-auto'/>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        ) : (
+            <div className="hidden md:grid grid-cols-2 gap-6 ml-32 mr-32">
+              {testimonials.map((testimonial) => (
+                <div key={testimonial.id} className="bg-white rounded-xl shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
                   <p className="text-[#696969] font-medium md:font-normal font-sans mb-12">{testimonial.content}</p>
-                  
-                  <div className="flex items-center">
-                    {/* <img src={testimonial.image} alt="" className='w-12 h-12 rounded-full'/> */}
+                  <div className="flex items-center mt-auto">
                     <div>
                       <h3 className="font-normal text-[#5C9269] text-[18px] ml-2 font-sans">{testimonial.name}</h3>
                       <p className='font-sans text-[13px] text-black/50 ml-2'>{testimonial.location}</p>
@@ -77,13 +109,9 @@ const Testimonials = () => {
                     <img src={Testi} alt="" className='w-18 h-18 ml-auto'/>
                   </div>
                 </div>
-              </div>
-
-              {/* Decorative Quote Mark */}
-              {/* <img src={Testi} alt="" className='w-18 h-18 ml-auto'/> */}
+              ))}
             </div>
-          ))}
-        </div>
+        )}
     </div>
   )
 }

@@ -9,7 +9,7 @@ export default function DetailsCard({
   
 }) {
   return (
-    <div className="relative w-full h-auto md:h-[500px] rounded-xl overflow-hidden shadow-lg">
+    <div className="relative w-full h-full md:h-[600px] rounded-xl overflow-hidden shadow-lg">
       {/* Mobile image - visible only on mobile */}
       <img
         src={image}
@@ -23,17 +23,17 @@ export default function DetailsCard({
       <img
         src={image}
         alt={title}
-        className="absolute inset-0 w-full h-[280px] object-cover hidden md:block"
+        className="absolute inset-0 w-full h-[350px] object-cover hidden md:block"
         data-aos="fade-up"
         data-aos-delay="200"
       />
 
       {/* Overlay Card */}
-      <div className="relative md:absolute md:bottom-0 bg-white/95 backdrop-blur-md rounded-b-xl md:rounded-bl-sm shadow-xl w-full">
+      <div className="relative md:absolute md:h-[300px] md:bottom-0 bg-white/95 backdrop-blur-md rounded-b-xl md:rounded-bl-sm shadow-xl w-full">
         <div className="p-4">
           <h2 className="text-lg font-semibold mb-2" data-aos="fade-up" data-aos-delay="400">{title}</h2>
           <p className="text-black font-serif text-xs mb-3" data-aos="fade-up" data-aos-delay="500">{duration}</p>
-          <p className="text-gray-600 font-serif text-xs mb-3 line-clamp-4" data-aos="fade-up" data-aos-delay="600">{description}</p>
+          <p className="text-gray-600 font-serif text-xs mb-3" data-aos="fade-up" data-aos-delay="600">{description}</p>
           
           <div className="w-full h-px bg-gray-200 my-3" data-aos="fade-up" data-aos-delay="700"></div>
           

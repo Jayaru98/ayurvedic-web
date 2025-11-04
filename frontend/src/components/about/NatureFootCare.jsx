@@ -44,14 +44,14 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
         name: "Signature Foot Massage (Oil Massage)",
         image: Service1,
         duration: "1 hour",
-        description: "A deeply relaxing oil massage focused on the feet to improve circulation, release tension, and restore natural energy flow. Perfect for stress relief and grounding.",
+        description: "A deeply relaxing oil massage focused on the feet to improve circulation.",
         price: "3000 Rs",
       },
       {
         id: 2,
         name: "Luxury Foot Massage",
         image: Service2,
-        description: "An indulgent foot massage experience combining gentle pressure techniques with aromatic oils. Ideal for total relaxation and a touch of luxury.",
+        description: "An indulgent foot massage experience combining gentle pressure techniques with aromatic oils.",
         duration: "1 hour",
         price: "3000 Rs",
       },
@@ -59,15 +59,14 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
         id: 3,
         name: "Ayurvedic Face Massage",
         image: Service3,
-        description: "A rejuvenating Ayurvedic facial massage using herbal oils that nourish the skin, improve circulation, and bring out a natural glow. Helps relieve facial tension and promotes youthful radiance.",
-        duration: "1 hour",
+        description: "A rejuvenating Ayurvedic facial massage using herbal oils that nourish the skin.",
         price: "2000 Rs",
       },
       {
         id: 4,
         name: "Nasya karma (Oil & Steam Therapy)",
         image: Service4,
-        description: "An Ayurvedic detox treatment where herbal oil and steam are applied through the nasal passages. Known to cleanse the sinuses, relieve headaches, improve breathing, and promote mental clarity.",
+        description: "An Ayurvedic detox treatment where herbal oil and steam are applied through the nasal passages. ",
         duration: "Oil Massage by Steam, 30 min",
         price: "1500 Rs",
       },
@@ -75,7 +74,7 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
         id: 5,
         name: "Shirodhara",
         image: Service5,
-        description: "A signature Ayurvedic therapy where a continuous stream of warm herbal oil is poured gently over the forehead. Effective for stress, anxiety, insomnia, and chronic headaches. Provides deep mental relaxation and tranquility.",
+        description: "A signature Ayurvedic therapy where a continuous stream of warm herbal oil is poured gently over the forehead.",
         duration: "30 min / 45 min / 1 hour",
         details: "Head pain massage",
         price: "4000 Rs",
@@ -264,7 +263,7 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
                     <h3 className="font-bold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
                       {treatment.name}
                     </h3>
-                    <p className="text-[#343929] text-sm mb-2 line-clamp-2">
+                    <p className="text-[#343929] text-sm mb-2 text-center line-clamp-2">
                       {treatment.description}
                     </p>
                   </div>
