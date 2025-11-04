@@ -25,8 +25,8 @@ const Footer = () => {
                     <div className=''>
                         <h2 className='text-[18px] md:text-[24px] text-white mt-6' data-aos="fade-up" data-aos-delay="400">Working Hours</h2>
                         <span className='block text-[16px] font-sans text-white/70 mt-6' data-aos="fade-up" data-aos-delay="400">Our Doors Are Open for Your Healing Journey</span>
-                        <span className='flex mt-6 font-sans text-white/70 text-[16px]' data-aos="fade-up" data-aos-delay="500"><FaRegClock className='mt-1'/>&nbsp; Monday - Friday: 9:00 AM - 8:00 PM</span>
-                        <span className='flex mt-2 font-sans text-white/70 text-[16px]' data-aos="fade-up" data-aos-delay="600"><FaRegClock className='mt-1'/>&nbsp; Sat - Sun : 8:00AM - 5:00PM</span>
+                        <span className='flex mt-6 font-sans text-white/70 text-[16px]' data-aos="fade-up" data-aos-delay="500"><FaRegClock className='mt-1'/>&nbsp; Monday - Sunday: 10:00 AM - 2:00 AM</span>
+                        {/* <span className='flex mt-2 font-sans text-white/70 text-[16px]' data-aos="fade-up" data-aos-delay="600"><FaRegClock className='mt-1'/>&nbsp; Sat - Sun : 8:00AM - 5:00PM</span> */}
                     </div>
                 </div>
 

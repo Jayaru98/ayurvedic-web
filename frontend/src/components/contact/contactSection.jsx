@@ -81,7 +81,7 @@ Colombo 06 <br /> </p>
               <div className="flex flex-col mb-10">
                 <p className='text-[14px]'>Call Us</p>
                 <p className='text-[14px]'>+94 74 261 0334</p>
-                <p className='text-[12px] text-gray-400'>Monday to Saturday, 10:00 AM - 2:00 AM</p>
+                <p className='text-[12px] text-gray-400'>Monday to Sunday, 10:00 AM - 2:00 AM</p>
               </div>
             </div>
             <div className='flex items-start gap-4 font-[600]' data-aos="fade-up" data-aos-delay="900">
