@@ -91,7 +91,7 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
         id: 7,
         name: "Fish Therapy",
         image: Service7,
-        description: "Gentle Garra rufa fish exfoliate dead skin, leaving feet soft, smooth, and refreshed.",
+        description: "Fish Therapy is a natural and refreshing treatment where tiny fish gently exfoliate your feet.",
         duration: "",
         price: "1500 Rs",
       },

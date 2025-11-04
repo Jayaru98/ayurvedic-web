@@ -11,6 +11,18 @@ import {Link} from "react-router-dom"
 
 const Hero = () => {
     useEffect(() => {
+      // Check if user is coming from the site for the first time in this session
+      if (!sessionStorage.getItem('whatsapp_welcome_sent')) {
+        // WhatsApp number and message
+        const whatsappNumber = '94742610334';
+        const message = encodeURIComponent('Hello, welcome to Nature Foot Care Ayurveda! How can we assist you today?');
+        // Open WhatsApp in a new tab with the welcome message
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        sessionStorage.setItem('whatsapp_welcome_sent', 'true');
+      }
+    }, []);
+
+    useEffect(() => {
       
       AOS.init({
         duration: 1000,
@@ -46,17 +58,20 @@ const Hero = () => {
             </h1>
             <h1 className="md:hidden text-[40px] text-white mb-6 mx-auto" data-aos="fade-up" data-aos-delay="400">Rebalance Your Mind, Body & Spirit with Ayurveda</h1>
           </div>
-          <div className='ml-4 md:ml-40'>
+          {/* <div className='ml-4 md:ml-40'>
             <p className='text-white/60 font-sans' data-aos="fade-up" data-aos-delay="400">Step into a sanctuary of natural healing. At Nature Foot Care and Ayurvedic Wellness, <br /> We bring you authentic Ayurvedic therapies designed for relaxation, rejuvenation, and inner harmony.</p>
-          </div>
+          </div> */}
           <div className='ml-4 md:ml-40  mt-4 md:mt-2 py-2 px-6 bg-[#5C9269] hover:bg-white hover:text-black rounded-full text-white cursor-pointer' data-aos="fade-up" data-aos-delay="500">
             
-              <Link 
-          to="/contact" 
-          className='inline-block py-2 px-6 bg-[#5C9269] hover:bg-white hover:text-black rounded-full text-white cursor-pointer'
-        >
-          Contact Us
-        </Link>
+        <a
+            href="https://wa.me/94742610334?text=Hello%2C%20I%20would%20like%20to%20make%20an%20appointment."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className='hidden md:block bg-[#5C9269] hover:bg-white hover:text-black py-3 px-6 rounded-full  text-white cursor-pointer'>
+              Book an Appointment
+            </button>
+          </a>
           </div>
         </div>
       </main>

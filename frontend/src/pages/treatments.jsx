@@ -89,7 +89,7 @@ const treatments = () => {
     {
       id: 7,
       title: "Fish Therapy",
-      description: "Fish Therapy is a natural and refreshing treatment where tiny Garra Rufa fish gently exfoliate your feet by removing dead skin cells. This soothing process improves blood circulation, softens the skin, and promotes relaxation. It provides a unique, ticklish sensation that leaves your feet feeling smooth, clean, and revitalized with a healthy glow.",
+      description: "Fish Therapy is a natural and refreshing treatment where tiny fish gently exfoliate your feet by removing dead skin cells. This soothing process enhances blood circulation, softens rough skin, and promotes deep relaxation. It offers a unique, ticklish sensation that leaves your feet feeling smooth, refreshed, and beautifully revitalized with a healthy glow.",
       price: "Rs. 1500",
       duration: "30 min / 45 min / 1 hour",
       image: Service7,

@@ -11,88 +11,94 @@ const Terms = () => {
        <HeaderNew />
         <div className='bg-white px-6 py-16'>
             <h3 className='text-[30px] font-semibold'>Terms and Conditions</h3>
-            <p className='mt-2'>Last updated: <span className='italic'>1st November 2025</span></p>
+            <p className='mt-2 font-semibold'>Last updated: <span className='italic'>November 4, 2025</span></p>
             <article className='mt-3 font-sans-serif'>
-                <p>Welcome to <span className='font-semibold'>Nature Foot Care and Ayurvedic Wellness</span> (“we,” “our,” or “us”). These Terms and Conditions (“Terms”) govern your use of our website and services.</p>
-                <p> By accessing or using our website, you agree to be bound by these Terms. If you do not agree, please do not use our website or services.</p>
+                <p>Welcome to Nature Foot Care. By accessing and using this website, you agree to comply with and be bound by the following terms and conditions.</p>
             </article>
             <section className=''>
-                <h4 className='font-semibold mt-4 mb-1'>1. Services</h4>
-                <p>Nature Foot Care and Ayurvedic Wellness provides wellness treatments, ayurvedic therapies, and related services.</p>
-                <p>All services are intended for relaxation and wellness purposes only and are not a substitute for professional medical treatment.</p>
+                <h4 className='font-semibold mt-4 mb-1'>1. Website Use</h4>
+                <p>This website is provided for informational purposes only. The information about our foot care treatments and packages is subject to change without notice. <br /> We reserve the right to modify or discontinue any part of this website at any time.</p>
             </section>
             <section>
-                <h4 className='font-semibold mt-4 mb-1'>2. Appointments and Bookings</h4>
+                <h4 className='font-semibold mt-4 mb-1'>2. Informational Content Only</h4>
+                <p>The content on this website, including treatment descriptions and package details, is for general information only and does not constitute:</p>
                 <ul className='ml-12 mt-3 list-disc space-y-2'>
-                    <li>Appointments can be made through our website, by phone, or in person.</li>
-                    <li>We recommend booking in advance to ensure availability.</li>
-                    <li>You agree to provide accurate and complete information when scheduling a service.</li>
+                    <li>Medical advice, diagnosis, or treatment</li>
+                    <li>A guarantee of specific results</li>
+                    <li>An offer to provide services without consultation</li>
+                    <li>Professional recommendations for your specific condition</li>
                 </ul>
-                <p className='mt-2 font-semibold ml-2'>Cancellation Policy</p>
-                <p className='ml-4'>If you need to cancel or reschedule, please inform us at least 24 hours in advance.</p>
-                <p className='ml-4'>Failure to do so may result in a cancellation fee.</p>
+                <p className='font-semibold'>Always consult a qualified healthcare professional before undergoing any foot care treatment, especially if you have existing medical conditions,  <br /> diabetes, circulatory problems, or allergies.</p>
             </section>
             <section>
-                <h4 className='font-semibold mt-4 mb-1'>3. Payments</h4>
-                <ul className='ml-12 mt-3 list-disc space-y-2'>
-                    <li>All prices are listed in [LKR or your currency].</li>
-                    <li>Payment can be made via cash, card, or approved online methods.</li>
-                    <li>We reserve the right to modify our prices at any time without prior notice.</li>
-                </ul>
+                <h4 className='font-semibold mt-4 mb-1'>3. No Online Transactions</h4>
+                <p>This website does not process payments, bookings, or reservations. All service inquiries and bookings are handled directly through WhatsApp or other <br /> contact methods provided. Any agreements for services are made directly between you and Nature Foot Care outside of this website.</p>
             </section>
             <section>
-                <h4 className='font-semibold mt-4 mb-1'>4. Health and Safety</h4>
+                <h4 className='font-semibold mt-4 mb-1'>4. Accuracy of Information</h4>
+                <p>While we strive to keep information accurate and up-to-date:</p>
                 <ul className='ml-12 mt-3 list-disc space-y-2'>
-                    <li>Please inform our staff about any allergies, injuries, or health conditions before treatment.</li>
-                    <li>We reserve the right to decline service if a treatment may pose a health risk to the client or therapist.</li>
-                    <li>Our services are strictly non-medical and do not claim to diagnose, treat, or cure any medical condition.</li>
+                    <li>Treatment descriptions, pricing, and packages may change</li>
+                    <li>Services may not be available at all times</li>
+                    <li>We are not responsible for errors or omissions in content</li>
+                    <li>Please confirm current details by contacting us directly</li>
                 </ul>
             </section>
             <section>
-                <h4 className='font-semibold mt-4 mb-1'>5. Personal Conduct</h4>
-                <p>We maintain a professional and respectful environment.</p>
-                <p>Inappropriate behavior, misconduct, or harassment toward staff will result in immediate termination of the session and may lead to a permanent ban from our services.</p>
+                <h4 className='font-semibold mt-4 mb-1'>5. Intellectual Property</h4>
+                <p>All content on this website, including text, images, logos, and graphics, is the property of Nature Foot Care and protected by copyright laws. You may not:</p>
+                <ul className='ml-12 mt-3 list-disc space-y-2'>
+                    <li>Copy, reproduce, or distribute our content without permission</li>
+                    <li>Use our content for commercial purposes</li>
+                    <li>Remove any copyright or proprietary notices</li>
+                </ul>
+                <p>You may view and print pages for personal, non-commercial use only.</p>
             </section>
             <section>
-                <h4 className='font-semibold mt-4 mb-1'>6. Intellectual Property</h4>
-                <p>All content on this website, including text, logos, images, and graphics, is the property of Nature Foot Care and Ayurvedic Wellness and is protected by copyright laws.</p>
-                <p> You may not copy, reproduce, or distribute any material without written permission.</p>
+                <h4 className='font-semibold mt-4 mb-1'>6. External Links</h4>
+                <p>Our website may contain links to third-party websites (including WhatsApp). We are not responsible for the content, privacy practices, <br />or terms of service of these external sites. Use them at your own risk.</p>
             </section>
             <section>
                 <h4 className='font-semibold mt-4 mb-1'>7. Limitation of Liability</h4>
-                <p>We strive to provide safe and effective services; however, we are not liable for:</p>
+                <p>To the fullest extent permitted by law:</p>
                 <ul className='ml-12 mt-3 list-disc space-y-2'>
-                    <li>Any injuries, allergic reactions, or medical issues resulting from treatments</li>
-                    <li>Any damages or losses arising from your use of the website or services</li>
+                    <li>This website is provided "as is" without any warranties</li>
+                    <li>We are not liable for any damages arising from your use of this website</li>
+                    <li>We are not responsible for service interruptions, technical issues, or information accuracy</li>
+                    <li>Any decisions based on website information are made at your own risk</li>
                 </ul>
-                <p>You agree to use our services at your own risk.</p>
             </section>
             <section>
-                <h4 className='font-semibold mt-4 mb-1'>8. Privacy</h4>
-                <p>Your privacy is important to us. Please read our [Privacy Policy] to understand how we handle your personal data.</p>
+                <h4 className='font-semibold mt-4 mb-1'>8. Health and Safety Disclaimer</h4>
+                <p className='font-semibold'>Important Notice:</p>
+                <ul className='ml-12 mt-3 list-disc space-y-2'>
+                    <li>Our foot care treatments are not substitutes for medical care</li>
+                    <li>Discontinue any treatment if you experience adverse reactions</li>
+                    <li>Inform us of any allergies, medical conditions, or medications during consultation</li>
+                    <li>We are not liable for allergic reactions or complications from treatments</li>
+                    <li>Individual results may vary</li>
+                </ul>
             </section>
             <section>
-                <h4 className='font-semibold mt-4 mb-1'>9. External Links</h4>
-                <p>Our website may include links to third-party websites.</p>
-                <p>We are not responsible for the content or accuracy of these external sites.</p>
+                <h4 className='font-semibold mt-4 mb-1'>9. Privacy</h4>
+                <p>Your use of this website is also governed by our Privacy Policy. Please review it to understand how we handle any information<br /> collected through this website.</p>
             </section>
             <section>
                 <h4 className='font-semibold mt-4 mb-1'>10. Changes to Terms</h4>
-                <p>We may update these Terms from time to time without prior notice.</p>
-                <p>The updated version will be posted on this page with a revised “Last Updated” date.</p>
-                <p>By continuing to use our services after any changes, you agree to the new Terms.</p>
+                <p>We reserve the right to update these Terms and Conditions at any time. Changes will be effective immediately upon posting. <br /> Your continued use of this website constitutes acceptance of any modifications.</p>
             </section>
             <section>
                 <h4 className='font-semibold mt-4 mb-1'>11. Governing Law</h4>
-                <p>These Terms are governed by the laws of Sri Lanka (or your country of operation).</p>
-                <p>Any disputes shall be resolved under the jurisdiction of the local courts.</p>
+                <p>These Terms and Conditions are governed by the laws of Sri Lanka.</p>
             </section>
             <section>
                 <h4 className='font-semibold mt-4 mb-1'>12. Contact Us</h4>
-                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-                    <p className='mt-5 ml-4 flex gap-2'><img src={Pushpin} alt=""  className='w-4 h-4'/>No.57,W A Silva mawatha, Colombo 06, Sri Lanka</p>
-                    <p className='mt-5 ml-4 flex gap-2'><img src={EmailIcon} alt=""  className='w-4 h-4'/> ayurvedafootcarenewnature@gmail.com</p>
-                    <p className='mt-5 ml-4 flex gap-2 mb-24'><img src={PhoneIcon} alt=""  className='w-4 h-4'/> +94 74 261 0334</p>
+                    <p>For questions about these Terms and Conditions or our services, please contact us:</p>
+                    <p className='font-semibold ml-4 mt-4'>Nature Foot Care</p>
+                    <p className='mt-5 ml-4 flex gap-2'>Email: ayurvedafootcarenewnature@gmail.com</p>
+                    <p className='mt-5 ml-4 flex gap-2 '>Phone:  +94 74 261 0334</p>
+                    <p className='mt-5 ml-4 flex gap-2'>Whatsapp: +94 74 261 0334</p>
+                    <p className='mt-5 ml-4 flex gap-2 mb-12'>Address: No.57,W A Silva mawatha, Colombo 06, Sri Lanka</p>
             </section>
         </div>
         <FooterNew />

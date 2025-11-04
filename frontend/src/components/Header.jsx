@@ -1,7 +1,8 @@
 import React from 'react'
 import Logo from '../assets/Images/Nature Foot Care Logo.png'
-import { FaPhone } from "react-icons/fa6";
+import { FiPhone } from "react-icons/fi";
 import { FaRegEnvelope } from "react-icons/fa6";
+import { AiOutlineMail } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { NavLink } from 'react-router-dom';
@@ -42,9 +43,10 @@ const Header = () => {
             </div>
             {/* Contact Info */}
             <div className="hidden md:flex items-center text-sm text-white">
-                <span><FaRegEnvelope className='w-5 h-5 mr-2 mt-2 font-bold' /></span>
-                <p className='mr-3 mt-2 font-normal font-sans'>ayurvedafootcarenewnature@gmail.com</p>
-                <span><FaPhone className='w-5 h-5 mr-2 mt-2' /></span>
+                <span><AiOutlineMail className='w-5 h-5 mr-2 mt-2 font-bold' /></span>
+                <p className='mr-6 mt-2 font-normal font-sans'>ayurvedafootcarenewnature@gmail.com</p>
+                <p className='mr-6 mt-2'>|</p>
+                <span><FiPhone className='w-4 h-4 mr-2 mt-2' /></span>
                 <span className='font-normal mt-2 font-sans'>+94 74 261 0334</span>
             </div>
         </div>
@@ -56,7 +58,7 @@ const Header = () => {
           <img src={Logo} alt="Nature foot care logo" className=' hidden md:block w-24 h-24' />
           {/* <p className='text-white hidden md:block md:text-3xl'>Nature Foot Care <br /> Ayurveda</p> */}
         </div>
-        <div className="hidden md:flex space-x-8 font-sans">
+        <div className="hidden md:flex space-x-8">
           <NavLink to="/" className={getLinkClass} end>Home</NavLink>
           <NavLink to="/about" className={getLinkClass}>About Us</NavLink>
           <NavLink to="/treatments" className={getLinkClass}>Treatments</NavLink>
@@ -69,7 +71,7 @@ const Header = () => {
             rel="noopener noreferrer"
           >
             <button className='hidden md:block bg-[#5C9269] hover:bg-white hover:text-black py-3 px-6 rounded-full  text-white cursor-pointer'>
-              Make Appointment
+              Book Appointment
             </button>
           </a>
         </div>

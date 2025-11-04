@@ -3,8 +3,10 @@ import Logo from '../assets/Images/Nature Foot Care Logo.png';
 import { FaFacebookF } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { FaRegClock } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa6";
-import { FaRegEnvelope } from "react-icons/fa6";
+// import { FaPhone } from "react-icons/fa6";
+import { FiPhone } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
+// import { FaRegEnvelope } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -37,8 +39,8 @@ const Footer = () => {
                     </div>
                     <div>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="1000">Contact</h2>
-                        <p className="flex mb-3 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100"><span><FaPhone className='w-4 h-4 mr-2 mt-2' /></span>&nbsp;+94 74 261 0334</p>
-                        <p className="flex mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1200"><span><FaRegEnvelope className='w-5 h-5 mr-2 mt-1 font-bold' /></span>&nbsp;ayurvedafootcarenewnature@gmail.com</p>
+                        <p className="flex mb-3 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100"><span><FiPhone className='w-4 h-4 mr-2 mt-2' /></span>&nbsp;+94 74 261 0334</p>
+                        <p className="flex mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1200"><span><AiOutlineMail className='w-5 h-5 mr-2 mt-1 font-bold' /></span>&nbsp;ayurvedafootcarenewnature@gmail.com</p>
                     </div>
                 </div>
                 <div className='mr-36 '>
