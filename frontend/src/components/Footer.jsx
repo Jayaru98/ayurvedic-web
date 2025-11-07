@@ -12,9 +12,9 @@ import { AiOutlineMail } from "react-icons/ai";
 const Footer = () => {
   return (
     <footer className="bg-[#1D4026] ">
-        <div className="container mx-auto px-4 ">
+        <div className="container mx-auto px-6 md:px-0 ">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-16 md:pb-20">
-                <div className="mb-4 md:mb-0 md:ml-32" >
+                <div className="mb-4 md:mb-0 md:ml-12" >
                     <div className='flex items-center space-x-2' data-aos="fade-up" data-aos-delay="200" >
                         <img src={Logo} alt="Nature foot care logo" className=' w-28 h-28 md:w-32 md:h-32 mt-8 -ml-3' />
                         <p className='text-white text-2xl md:text-3xl mt-5'>Nature Foot Care <br /> Ayurveda</p>
@@ -43,7 +43,7 @@ const Footer = () => {
                         <p className="flex mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1200"><span><AiOutlineMail className='w-5 h-5 mr-2 mt-1 font-bold' /></span>&nbsp;ayurvedafootcarenewnature@gmail.com</p>
                     </div>
                 </div>
-                <div className='mr-36 '>
+                <div className='mr-12 '>
                     <div className='text-start'>
                         <h2 className='text-[18px] md:text-[24px] text-white mt-2 mb-6' data-aos="fade-up" data-aos-delay="1300">Explore</h2>
                         <ul className=''>

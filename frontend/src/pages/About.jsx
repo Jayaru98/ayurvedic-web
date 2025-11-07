@@ -28,6 +28,7 @@ const About = () => {
       <ShowcaseAbout />
       <FaqSection 
         faqImage={FaqImage}
+        image
           faqs={[
             {
               question: "What is Nature Foot Care Ayurveda’s approach to wellness?",

@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
   return (
     <div >
         <HeaderNew />
-        <div className='bg-white px-6 py-16 flex-grow'>
+        <div className='bg-white px-6 md:px-36 py-16 flex-grow'>
             <h3 className='text-[30px] font-semibold'>Privacy Policy</h3>
             <p className='mt-2 font-semibold'>Last updated: <span className='italic'>November 4, 2025</span></p>
             <article className='mt-3 font-sans-serif'>
@@ -105,10 +105,10 @@ const PrivacyPolicy = () => {
                 <h4 className='font-semibold mt-4 mb-1'>10. Contact Us</h4>
                 <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
                 <p className='font-semibold ml-4 mt-4'>Nature Foot Care</p>
-                <p className='mt-5 ml-4 flex gap-2'>Email: ayurvedafootcarenewnature@gmail.com</p>
-                <p className='mt-5 ml-4 flex gap-2 '>Phone:  +94 74 261 0334</p>
-                <p className='mt-5 ml-4 flex gap-2'>Whatsapp: +94 74 261 0334</p>
-                <p className='mt-5 ml-4 flex gap-2 mb-12'>Address: No.57,W A Silva mawatha, Colombo 06, Sri Lanka</p>
+                <p className='mt-3 ml-4 flex gap-2'>Email: ayurvedafootcarenewnature@gmail.com</p>
+                <p className='mt-3 ml-4 flex gap-2 '>Phone:  +94 74 261 0334</p>
+                <p className='mt-3 ml-4 flex gap-2'>Whatsapp: +94 74 261 0334</p>
+                <p className='mt-3 ml-4 flex gap-2 mb-12'>Address: No.57,W A Silva mawatha, Colombo 06, Sri Lanka</p>
             </section>
         </div>
         <FooterNew />

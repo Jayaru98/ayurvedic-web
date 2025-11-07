@@ -8,7 +8,7 @@ import Service3 from "../assets/images/face-massage.png";
 import Service4 from "../assets/images/nasya.png";
 import Service5 from "../assets/images/shirod.png";
 import Service6 from "../assets/images/vasti.png";
-import Service7 from "../assets/images/Fish6.png";
+import Service7 from "../assets/images/Fish.jpg";
 import Service8 from "../assets/images/steamn.png";
 import Service9 from "../assets/images/pedicure.png";
 import Service10 from "../assets/images/manicure.png";
@@ -23,6 +23,8 @@ import Icon6 from "../assets/images/icons-UGGEC4D_8.png";
 import TreatmentBottom from "../assets/images/images-PZE6K9S.jpg";
 import FaqSection from "../components/FaqSection";
 import FaqImage from "../assets/images/faqsectionj.jpg";
+// import FaqImage from "../assets/images/FAQ2.webp";
+// import FaqImage from "../assets/images/FAQ1.png";
 import Footer from "../components/Footer";
 import IntroSection from "../components/treatments/introSection";
 import AOS from "aos";
@@ -215,7 +217,7 @@ const treatments = () => {
       </div>
 
       {/* Treatment Cards Grid */}
-      <div id="treatment-cards" className="max-w-7xl mx-auto px-4 py-2">
+      <div id="treatment-cards" className="max-w-7xl mx-auto px-4 py-2 pb-12">
         {filteredTreatments.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTreatments.map((treatment, index) => (
@@ -334,7 +336,8 @@ const treatments = () => {
 
       <div data-aos="zoom-in" data-aos-delay="350">
         <FaqSection
-          faqImage={FaqImage}
+          faqImage={FaqImage} 
+          image
           faqs={[
             {
               question: "What is Nature Foot Care Ayurveda’s approach to wellness?",

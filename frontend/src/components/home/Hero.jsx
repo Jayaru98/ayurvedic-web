@@ -68,7 +68,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className='hidden md:block bg-[#5C9269] hover:bg-white hover:text-black py-3 px-6 rounded-full  text-white cursor-pointer'>
+            <button className=' md:block bg-[#5C9269] hover:bg-white hover:text-black py-3 px-6 rounded-full  text-white cursor-pointer'>
               Book an Appointment
             </button>
           </a>

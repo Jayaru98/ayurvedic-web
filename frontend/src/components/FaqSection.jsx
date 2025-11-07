@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "react/jsx-runtime";
 import { FiCheck } from "react-icons/fi";
 import { FiPlusCircle } from "react-icons/fi";
@@ -9,14 +9,24 @@ export default function FaqSection({
   title = "Frequently Asked Questions",
   faqImage,
   faqs = [],
-  imageHeight,
+  // imageHeight,
 }) {
   // Simple accordion implementation
   const [openIndex, setOpenIndex] = useState(null);
+  const [contentHeight, setContentHeight] = useState('auto');
+  const rightContentRef = useRef(null)
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+   // Update image height when content height changes or accordion toggles
+  useEffect(() => {
+    if (rightContentRef.current) {
+      const height = rightContentRef.current.offsetHeight;
+      setContentHeight(`${height}px`);
+    }
+  }, [openIndex, faqs]);
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
@@ -30,13 +40,13 @@ export default function FaqSection({
           <img
             src={faqImage}
             alt="FAQ Illustration"
-            className="object-cover w-full h-full"
-            style={{ height: imageHeight, width: "100%" }}
+            className="object-cover w-full h-full md:h-auto"
+            style={{ height: contentHeight, width: "100%" }}
           />
         </div>
 
         {/* Right Content */}
-        <div className="md:pt-0">
+        <div ref={rightContentRef} className="md:pt-0">
           {/* Subtitle */}
 
           {/* Title */}
