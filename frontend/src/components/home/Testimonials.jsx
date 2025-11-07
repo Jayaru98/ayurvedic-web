@@ -36,7 +36,7 @@ const Testimonials = () => {
       id: 1,
       name: "Anura Wijesinghe",
       image: Testi1,
-      content: "The Ayurvedic massage I received was transformative. The serene environment and expert care left me feeling refreshed and balanced. Highly recommend this place! I’m already looking forward to my next visit to experience that same sense of peace and rejuvenation.",
+      content: "The Ayurvedic massage I received was transformative. The expert care left me feeling refreshed. Highly recommend this place! I’m already looking forward to my next visit to experience that same sense of peace and rejuvenation.",
       location : "Customer, Kandy"
     },
     {
@@ -57,14 +57,14 @@ const Testimonials = () => {
       id: 4,
       name: "Priyani Perera",
       image: Testi4,
-      content: "This Avyrvedic spa offers a perfect blend of relaxation and rejuvenation. The calming ambiance and skilled therapists made every moment feel truly restorative. It’s an ideal escape for anyone seeking balance and inner peace.",
+      content: "This Avyrvedic spa offers a perfect blend of relaxation and rejuvenation. The calming ambiance and skilled therapists made every moment feel truly restorative. It’s an ideal escape for anyone seeking inner peace.",
       location : "Customer, Gampaha"
     }
   ];
 
 
   return (
-    <div className="min-h-screen bg-amber-50">
+    <div className="min-h-[600px] md:min-h-screen bg-amber-50">
         <div className='text-center text-[#6B9A75] pt-6 md:pt-16' data-aos="fade-up" data-aos-delay="200">
             <p className='flex justify-center items-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; TESTIMONIALS</p>
         </div>
@@ -76,10 +76,10 @@ const Testimonials = () => {
         </div>
         
         {isMobile ? (
-          <div className="md:hidden px-4 mt-16" data-aos="fade-up" data-aos-delay="400">
+          <div className="md:hidden px-10 mt-16" data-aos="fade-up" data-aos-delay="400">
             <Slider {...sliderSettings}>
               {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="px-2 pb-8">
+                <div key={testimonial.id} className="px-2 md:pb-8">
                   <div className="bg-white rounded-xl shadow-md p-6 h-full flex flex-col justify-between">
                     <p className="text-[#696969] font-medium md:font-normal font-sans mb-12">
                       {testimonial.content}

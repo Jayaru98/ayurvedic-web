@@ -33,7 +33,7 @@ const mobileMenuNew = () => {
         </div>
         {isMenuOpen && (
             // <div className='md:hidden fixed inset-0 bg-green-900/90 z-10 animate-drop-in flex flex-col justify-center items-center'>
-            <div className='md:hidden fixed top-0 h-[700px] pt-24  left-0 right-0 bg-green-900 z-50 animate-drop-in flex flex-col justify-start items-center'>
+            <div className='md:hidden fixed top-0 h-[900px] pt-24  left-0 right-0 bg-green-900 z-50 animate-drop-in flex flex-col justify-start items-center'>
                 <div className='flex justify-between'>
                     <a href="/" className="absolute top-4 left-4">
                         <img src={Logo} alt="Nature Foot care logo" className='w-18 h-18 z-50' />

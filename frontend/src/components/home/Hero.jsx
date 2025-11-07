@@ -31,7 +31,7 @@ const Hero = () => {
       });
     }, []);
   return (
-      <div className="relative min-h-screen bg-amber-50" data-aos="fade-right"> 
+      <div className="relative min-h-screen overflow-hidden" data-aos="fade-right"> 
       {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-no-repeat" 
@@ -61,7 +61,7 @@ const Hero = () => {
           {/* <div className='ml-4 md:ml-40'>
             <p className='text-white/60 font-sans' data-aos="fade-up" data-aos-delay="400">Step into a sanctuary of natural healing. At Nature Foot Care and Ayurvedic Wellness, <br /> We bring you authentic Ayurvedic therapies designed for relaxation, rejuvenation, and inner harmony.</p>
           </div> */}
-          <div className='ml-4 md:ml-40  mt-4 md:mt-2 py-2 px-6 bg-[#5C9269] hover:bg-white hover:text-black rounded-full text-white cursor-pointer' data-aos="fade-up" data-aos-delay="500">
+          <div className='ml-4 md:ml-40  mt-4 md:mt-2   hover:text-black rounded-full text-white cursor-pointer' data-aos="fade-up" data-aos-delay="500">
             
         <a
             href="https://wa.me/94742610334?text=Hello%2C%20I%20would%20like%20to%20make%20an%20appointment."

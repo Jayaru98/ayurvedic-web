@@ -94,11 +94,11 @@ const Terms = () => {
             <section>
                 <h4 className='font-semibold mt-4 mb-1'>12. Contact Us</h4>
                     <p>For questions about these Terms and Conditions or our services, please contact us:</p>
-                    <p className='fon3-semibold ml-4 mt-4'>Nature Foot Care</p>
-                    <p className='mt-2 ml-4 flex gap-2'>Email: ayurvedafootcarenewnature@gmail.com</p>
-                    <p className='mt-2 ml-4 flex gap-2 '>Phone:  +94 74 261 0334</p>
-                    <p className='mt-2 ml-4 flex gap-2'>Whatsapp: +94 74 261 0334</p>
-                    <p className='mt-2 ml-4 flex gap-2 mb-12'>Address: No.57,W A Silva mawatha, Colombo 06, Sri Lanka</p>
+                    <p className='font-semibold mt-4'>Nature Foot Care</p>
+                    <p className='mt-2 flex gap-2'>Email <span>&nbsp;&nbsp;: ayurvedafootcarenewnature@gmail.com</span></p>
+                    <p className='mt-2 flex gap-2 '>Phone <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  +94 74 261 0334</span></p>
+                    <p className='mt-2 flex gap-2'>Whatsapp : +94 74 261 0334</p>
+                    <p className='mt-2 flex gap-2 mb-12'>Address <span>&nbsp;&nbsp;: No.57,W A Silva mawatha, Colombo <br />&nbsp;&nbsp;&nbsp; 06, Sri Lanka</span></p>
             </section>
         </div>
         <FooterNew />

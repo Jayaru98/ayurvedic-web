@@ -35,7 +35,7 @@ const AboutUs = () => {
           <img
             src={Image3}
             alt="Woman receiving treatment"
-            className="w-full max-w-[332px] h-64 ax-w-[332px] md:w-[calc(22vw)] md:h-[calc(38vw)] min-w-[252px] md:min-h-[530px] rounded-2xl mt-4 ml-12 mr-12 md:mr-2 md:mt-0 md:ml-4 object-cover"
+            className="w-full max-w-[332px] h-64 md:w-[calc(22vw)] md:h-[calc(38vw)] min-w-[252px] md:min-h-[530px] rounded-2xl mt-4  md:mr-2 md:mt-0 md:ml-4 object-cover"
             data-aos="fade-up"
             data-aos-delay="300"
           />
