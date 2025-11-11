@@ -17,7 +17,7 @@ const Home = () => {
         <Hero />
         <AboutUs />
         <Process />
-        <NatureFootCare ctaText="Explore Our Packages" />
+        <NatureFootCare ctaText="Explore Our Treatments" />
         <Testimonials />
         <Showcase />
         {/* <FaqSection 

@@ -8,7 +8,7 @@ export default function HeroSection({
 }) {
   return (
     <div 
-      className="relative w-full h-[550px] flex flex-col text-white"
+      className="relative w-full h-[700px] md:h-[550px] flex flex-col text-white"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
@@ -26,7 +26,7 @@ export default function HeroSection({
       {/* Content */}
       <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center">
         {/* Title */}
-        <h1 className="text-6xl  font-bold mb-4">{title}</h1>
+        <h1 className="text-6xl  font-bold mb-4 -mt-16">{title}</h1>
 
         {/* Breadcrumb */}
         <div className="flex items-center justify-center gap-2 text-sm uppercase tracking-wide">

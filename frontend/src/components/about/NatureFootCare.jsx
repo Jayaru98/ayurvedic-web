@@ -13,12 +13,12 @@
   import Service6 from "../../assets/images/vasti.png";
   import Service7 from "../../assets/images/Fish.jpg";
   import Service8 from "../../assets/images/steamn.png";
-  import Service9 from "../../assets/images/pedicure.png";
+  import Service9 from "../../assets/images/ped2.png";
   import Service10 from "../../assets/images/manicure.png";
   import PackImage from "../../assets/images/packagesImage.png"
 
 
-const NatureFootCare = ({ ctaText = "View Details" }) => {
+const NatureFootCare = ({ ctaText = "View Treatments" }) => {
   // track window width so we can compute slidesToShow and force Slider remount
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1200
@@ -105,20 +105,20 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
       },
       {
         id: 9,
-        name: "Pedicure",
+        name: "Manicure / Pedicure",
         image: Service9,
-        description: "Cleanses, exfoliates, and nourishes feet, leaving them soft, fresh, and beautiful.",
+        description: "Cleanses, exfoliates, and nourishes, leaving your nails soft, fresh, and beautiful.",
         duration: "",
         price: "3000 Rs",
       },
-      {
-        id: 10,
-        name: "Manicure",
-        image: Service10,
-        description: "Shapes, polishes, and revitalizes hands, giving nails a healthy, elegant look.",
-        duration: "",
-        price: "3000 Rs",
-      },
+      // {
+      //   id: 10,
+      //   name: "Manicure",
+      //   image: Service10,
+      //   description: "Shapes, polishes, and revitalizes hands, giving nails a healthy, elegant look.",
+      //   duration: "",
+      //   price: "3000 Rs",
+      // },
     ];
 
     // carousel settings
@@ -133,20 +133,12 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
       autoplay: true,
       autoplaySpeed: 2000,
       adaptiveHeight: true,
+      // centerMode: true,
+      // centerPadding: "20px",
       responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
+    { breakpoint: 1024, settings: { slidesToShow: 2, centerPadding: "15px" } },
+    { breakpoint: 768, settings: { slidesToShow: 1, centerPadding: "10px" } },
+  ],
     };
 
   return (
@@ -158,7 +150,7 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
       >
         <p className="flex items-center justify-center">
           <FiPlusCircle className=" w-5 h-5" />
-          &nbsp; PACKAGES
+          &nbsp; Treatments
         </p>
       </div>
 
@@ -169,12 +161,11 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
           data-aos-delay="400"
         >
           <h1 className="text-[32px] md:text-[56px] text-[#112025]">
-            Nature Foot Care - Our Packages
+            Nature Foot Care - Our Treatments
           </h1>
         </div>
       </div>
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-6 mr-6 md:ml-20 md:mr-32"> */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2  rounded-xl overflow-hidden px-4  sm:px-6">  
+      <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 rounded-xl px-4 sm:px-6">
         {/* About Section */}
         {/* <div className="max-w-4xl mr-0 mx-auto mb-16 ">
           <div
@@ -234,13 +225,13 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
         
       </div>
       {/* Packages Section */}
-      <div
-          className="max-w-7xl mt-8 mx-auto h-fit bg-white rounded-xl"
+      <div 
+          className="max-w-7xl mx-auto h-fit"
           data-aos="fade-up"
           data-aos-delay="400"
         >
           {/* <div className="border-l-4 border-[#696969] pl-4 py-2 rounded-xl shadow-md p-8"> */}
-          <div className="pl-4 py-2 rounded-xl shadow-md p-8">
+          <div className="pl-4 py-2 gap-4 p-8">
             {/* <h2
               className="text-2xl font-bold text-[#696969] mb-2 pb-2"
               data-aos="fade-up"
@@ -252,29 +243,38 @@ const NatureFootCare = ({ ctaText = "View Details" }) => {
             <Slider key={sliderKey} ref={sliderRef} {...sliderSettings}>
                 {treatments.map((treatment) => (
                   <div
-                    key={treatment.id}
-                    className="flex flex-col pl-8 pr-8 items-center justify-center py-4"
+                    key={treatment.id} 
+                    className="px-3"
                   >
-                    <img
-                      src={treatment.image}
-                      alt={treatment.name}
-                      className="w-full h-56 md:h-64 object-cover flex mx-auto rounded-xl shadow-md mb-4"
-                    />
-                    <h3 className="font-bold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
-                      {treatment.name}
-                    </h3>
-                    <p className="text-[#343929] text-sm mb-2 text-center line-clamp-2">
-                      {treatment.description}
-                    </p>
+                    <div className="flex flex-col items-center rounded-2xl bg-white py-4 px-2 ">
+                      <img
+                        src={treatment.image}
+                        alt={treatment.name}
+                        className="w-full h-56 md:h-68 object-cover flex mx-auto rounded-xl shadow-md mb-4"
+                      />
+                      {treatment.id === 1 ? (
+                        <h3 className="font-semibold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
+                          Signature Foot Massage
+                          <span className="hidden md:inline">&nbsp;(Oil Massage)</span>
+                        </h3>
+                      ) : (
+                        <h3 className="font-semibold text-[#112015] text-lg mb-2 flex items-center justify-center text-left line-clamp-1">
+                          {treatment.name}
+                        </h3>
+                      )}
+                      <p className="text-[#343929] text-sm mb-2 text-center line-clamp-2">
+                        {treatment.description}
+                      </p>
+                    </div>
                   </div>
                 ))}
             </Slider>
 
             {/* Call to Action */}
-            <div className="max-w-4xl mx-auto mt-6 text-center">
+            <div className="max-w-4xl mx-auto mt-16 text-center">
               <Link
                 to="/treatments#treatment-cards"
-                className="bg-[#175326] hover:bg-[#053f14] text-white mb-9 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg cursor-pointer inline-block"
+                className="bg-[#175326] hover:bg-[#053f14] text-white  font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg cursor-pointer inline-block"
               >
                   {ctaText}
               </Link>

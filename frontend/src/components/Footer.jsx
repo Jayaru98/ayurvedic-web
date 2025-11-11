@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1D4026] ">
         <div className="container mx-auto px-6 md:px-0 ">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-16 md:pb-20">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-16 md:pb-20 flex-wrap">
                 <div className="mb-4 md:mb-0 md:ml-12" >
                     <div className='flex items-center space-x-2' data-aos="fade-up" data-aos-delay="200" >
                         <img src={Logo} alt="Nature foot care logo" className=' w-28 h-28 md:w-32 md:h-32 mt-8 -ml-3' />

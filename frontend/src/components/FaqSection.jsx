@@ -29,7 +29,7 @@ export default function FaqSection({
   }, [openIndex, faqs]);
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-3">
+    <section className="max-w-7xl mx-auto px-6 py-8">
       <p className="text-sm flex items-center justify-center uppercase tracking-wide mb-8 text-green-700">
         <FiPlusCircle className="mt1 w-5 h-5" /> &nbsp;
         {subtitle}

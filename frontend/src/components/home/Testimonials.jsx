@@ -25,7 +25,7 @@ const Testimonials = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: isMobile ? 1 : 2,
     slidesToScroll: 1,
     autoplay: true,
   };
@@ -59,13 +59,26 @@ const Testimonials = () => {
       image: Testi4,
       content: "This Avyrvedic spa offers a perfect blend of relaxation and rejuvenation. The calming ambiance and skilled therapists made every moment feel truly restorative. It’s an ideal escape for anyone seeking inner peace.",
       location : "Customer, Gampaha"
+    },
+    {
+      id: 5,
+      name: "Jagath Botheju",
+      // image: Testi5,
+      content: 'The therapies were deeply relaxing, and the calming atmosphere made me feel completely at ease. This treatment leaves me refreshed and energized. I’ll definitely visit again for another round of relaxation.',
+      location : "Customer, Negombo"
+    },
+    {
+      id: 6,
+      name: 'Dulan Indika',
+      content: 'This Ayurvedic spa provides an incredible balance of healing and tranquility. The soothing atmosphere and expert therapists created an experience of deep renewal. It’s the perfect retreat for anyone yearning for harmony within.',
+      location: 'Customer, Kaluthara'
     }
   ];
 
 
   return (
-    <div className="min-h-[600px] md:min-h-screen bg-amber-50">
-        <div className='text-center text-[#6B9A75] pt-6 md:pt-16' data-aos="fade-up" data-aos-delay="200">
+    <div className="min-h-[600px] md:min-h-[400px] bg-amber-50">
+        <div className='text-center text-[#6B9A75] pt-6 md:pt-6' data-aos="fade-up" data-aos-delay="200">
             <p className='flex justify-center items-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; TESTIMONIALS</p>
         </div>
 
@@ -80,7 +93,7 @@ const Testimonials = () => {
             <Slider {...sliderSettings}>
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="px-2 md:pb-8">
-                  <div className="bg-white rounded-xl shadow-md p-6 h-full flex flex-col justify-between">
+                  <div className="bg-white rounded-xl shadow-md p-6 h-[350px] flex flex-col justify-between">
                     <p className="text-[#696969] font-medium md:font-normal font-sans mb-12">
                       {testimonial.content}
                     </p>
@@ -97,19 +110,25 @@ const Testimonials = () => {
             </Slider>
           </div>
         ) : (
-            <div className="hidden md:grid grid-cols-2 gap-6 ml-32 mr-32">
-              {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="bg-white rounded-xl shadow-md p-6 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
-                  <p className="text-[#696969] font-medium md:font-normal font-sans mb-12">{testimonial.content}</p>
-                  <div className="flex items-center mt-auto">
-                    <div>
-                      <h3 className="font-normal text-[#5C9269] text-[18px] ml-2 font-sans">{testimonial.name}</h3>
-                      <p className='font-sans text-[13px] text-black/50 ml-2'>{testimonial.location}</p>
+            <div className="hidden md:block px-10 mt-16" data-aos="fade-up" data-aos-delay="400">
+              <Slider {...sliderSettings} className="max-w-7xl mx-auto">
+                {testimonials.map((testimonial) => (
+                  <div key={testimonial.id} className="px-2 md:pb-8">
+                    <div className="bg-white rounded-xl shadow-md md:p-6 h-full flex flex-col justify-between">
+                      <p className="text-[#696969] font-medium md:font-normal font-sans mb-12">
+                        {testimonial.content}
+                      </p>
+                      <div className="flex items-center mt-auto">
+                        <div>
+                          <h3 className="font-normal text-[#5C9269] text-[18px] ml-2 font-sans">{testimonial.name}</h3>
+                          <p className='font-sans text-[13px] text-black/50 ml-2'>{testimonial.location}</p>
+                        </div>
+                        <img src={Testi} alt="" className='w-18 h-18 ml-auto'/>
+                      </div>
                     </div>
-                    <img src={Testi} alt="" className='w-18 h-18 ml-auto'/>
                   </div>
-                </div>
-              ))}
+                ))}
+              </Slider>
             </div>
         )}
     </div>

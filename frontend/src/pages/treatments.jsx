@@ -10,7 +10,7 @@ import Service5 from "../assets/images/shirod.png";
 import Service6 from "../assets/images/vasti.png";
 import Service7 from "../assets/images/Fish.jpg";
 import Service8 from "../assets/images/steamn.png";
-import Service9 from "../assets/images/pedicure.png";
+import Service9 from "../assets/images/ped2.png";
 import Service10 from "../assets/images/manicure.png";
 import HeroBackground from "../assets/images/treatmenthero.webp";
 import WhyChooseUs from "../components/whyChooseUs";
@@ -106,20 +106,20 @@ const treatments = () => {
     },
     {
       id: 9,
-      title: "Pedicure",
-      description: "The Pedicure treatment nourishes and revitalizes your feet through cleansing, exfoliation, nail care, and gentle massage. Using herbal and aromatic products, it softens rough skin, improves circulation, and promotes relaxation. This soothing therapy leaves your feet feeling refreshed, smooth, and beautifully cared for, enhancing both comfort and appearance with a touch of luxury.",
+      title: "Manicure / Pedicure",
+      description: "Our Pedicure and Manicure treatments provide nourishing care for hands and feet. The process includes cleansing, exfoliation, nail shaping, cuticle care, and soothing massage using herbal and aromatic products. This relaxing therapy softens skin, boosts circulation, eases tension, and leaves nails looking healthy, elegant, and beautifully polished for a refreshing, luxurious experience.",
       price: "Rs. 3000",
       duration: "30 min / 45 min / 1 hour",
       image: Service9,
     },
-    {
-      id: 10,
-      title: "Manicure",
-      description: "The Manicure treatment is a luxurious hand care therapy that nourishes and beautifies your nails and skin. It includes cleansing, exfoliation, nail shaping, cuticle care, and a soothing massage with rich herbal creams. This relaxing treatment improves blood circulation, softens the hands, and leaves them looking elegant, healthy, and perfectly polished.",
-      price: "Rs. 3000",
-      duration: "30 min / 45 min / 1 hour",
-      image: Service10,
-    },
+    // {
+    //   id: 10,
+    //   title: "Manicure",
+    //   description: "The Manicure treatment is a luxurious hand care therapy that nourishes and beautifies your nails and skin. It includes cleansing, exfoliation, nail shaping, cuticle care, and a soothing massage with rich herbal creams. This relaxing treatment improves blood circulation, softens the hands, and leaves them looking elegant, healthy, and perfectly polished.",
+    //   price: "Rs. 3000",
+    //   duration: "30 min / 45 min / 1 hour",
+    //   image: Service10,
+    // },
   ];
 
   useEffect(() => {

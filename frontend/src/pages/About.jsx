@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
-import AboutUs from "../components/home/AboutUs";
+import AboutUs from "../components/about/AboutUs";
 import CoreValues from "../components/about/CoreValue";
 import ShowcaseAbout from "../components/about/ShowcaseAbout";
 import FaqImage from "../assets/images/faqsectionj.jpg"
@@ -24,7 +24,7 @@ const About = () => {
       <AboutUs />
 
       <CoreValues />
-      <NatureFootCare ctaText="View Details" />
+      <NatureFootCare ctaText="View Treatments" />
       <ShowcaseAbout />
       <FaqSection 
         faqImage={FaqImage}

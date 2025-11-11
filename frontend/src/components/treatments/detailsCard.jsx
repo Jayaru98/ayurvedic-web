@@ -14,7 +14,7 @@ export default function DetailsCard({
       <img
         src={image}
         alt={title}
-        className="w-full h-[200px] object-cover md:hidden rounded-t-xl"
+        className="w-full h-[280px] object-cover md:hidden rounded-t-xl"
         data-aos="fade-up"
         data-aos-delay="200"
       />

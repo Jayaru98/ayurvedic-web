@@ -37,7 +37,7 @@ const Showcase = () => {
   };
 
   return (
-    <div className='bg-amber-50 pt-3 md:pt-12 pb-20'>
+    <div className='bg-amber-50 pt-3  pb-20'>
         <div className='text-[#6B9A75] text-center' data-aos="fade-up" data-aos-delay="200">
             <p className='flex items-center justify-center'><FiPlusCircle className='w-5 h-5'/>&nbsp; WELLNESS SHOWCASE</p>
         </div>
@@ -47,8 +47,8 @@ const Showcase = () => {
             <h1 className="text-[32px] md:text-[56px] text-[#112025]">
               Our Ayurvedic Experience
             </h1>
-            <span className='hidden md:block text-[16px] font-sans text-[#696969]'>At Nature Foot Care & Ayurvedic Wellness, every treatment is a journey of relaxation and healing. Rooted in Ayurveda and nature, our spa offers a serene escape to restore balance, energy, and inner peace</span>
-            <span className='block md:hidden text-[16px] font-medium ml-2 mr-2 font-sans text-[#696969]'>At Nature Foot Care & Ayurvedic Wellness, every treatment is a journey of relaxation and healing. Rooted in Ayurveda and nature, our spa offers a serene escape to restore balance, energy, and inner peace</span>
+            <span className='hidden md:block text-[16px] font-sans text-[#696969]'>At Nature Foot Care & Ayurvedic Wellness, every treatment is a journey of relaxation and healing. </span>
+            <span className='block md:hidden text-[16px] font-medium ml-2 mr-2 font-sans text-[#696969]'>At Nature Foot Care & Ayurvedic Wellness, every treatment is a journey of relaxation and healing. </span>
           </div>
           {isMobile ? (
             <div className="lg:hidden px-4" data-aos="fade-up" data-aos-delay="400">

@@ -31,7 +31,7 @@ const Hero = () => {
       });
     }, []);
   return (
-      <div className="relative min-h-screen overflow-hidden" data-aos="fade-right"> 
+      <div className="relative h-screen md:h-screen bg-amber-50 overflow-hidden min-h-[650px]" data-aos="fade-down"> 
       {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-no-repeat" 
@@ -46,29 +46,29 @@ const Hero = () => {
         <Header />
 
       {/* Main Content */}
-      <main className="container mx-auto py-2 md:py-20" data-aos="fade-up">
+      <main className="container mx-auto py-20 md:py-20" data-aos="fade-up">
         <div className="flex flex-col items-start">
-          <div className='pl-4 md:pl-40 text-white md:mt-20' data-aos="fade-up" data-aos-delay="200">
+          <div className='pl-4 md:pl-40 md:mt-4 text-white' data-aos="fade-up" data-aos-delay="200">
               <p className='flex text-[14px] md:text-[16px]'><FiPlusCircle className=' w-5 h-5'/>&nbsp; FOOT CARE, SOUL CARE</p>
           </div>
 
-          <div className="pl-4 md:pl-40" data-aos="flip-up" data-aos-delay="600">
-            <h1 className="hidden md:block text-3xl md:text-[80px] text-white mb-6 mx-auto">
+          <div className="pl-4 md:pl-40 mt-6 md:mt-0" data-aos="flip-up" data-aos-delay="600">
+            <h1 className="hidden md:block text-3xl md:text-[80px] text-white  mb-6 mx-auto">
               Rebalance Your Mind, Body & Spirit with Ayurveda
             </h1>
-            <h1 className="md:hidden text-[40px] text-white mb-6 mx-auto" data-aos="fade-up" data-aos-delay="400">Rebalance Your Mind, Body & Spirit with Ayurveda</h1>
+            <h1 className="md:hidden mt-6 text-[40px] text-white mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="400">Rebalance Your Mind, Body & Spirit with Ayurveda</h1>
           </div>
           {/* <div className='ml-4 md:ml-40'>
             <p className='text-white/60 font-sans' data-aos="fade-up" data-aos-delay="400">Step into a sanctuary of natural healing. At Nature Foot Care and Ayurvedic Wellness, <br /> We bring you authentic Ayurvedic therapies designed for relaxation, rejuvenation, and inner harmony.</p>
           </div> */}
-          <div className='ml-4 md:ml-40  mt-4 md:mt-2   hover:text-black rounded-full text-white cursor-pointer' data-aos="fade-up" data-aos-delay="500">
+          <div className='ml-4 md:ml-40  mt-4  hover:text-black rounded-full text-white cursor-pointer' >
             
         <a
             href="https://wa.me/94742610334?text=Hello%2C%20I%20would%20like%20to%20make%20an%20appointment."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className=' md:block bg-[#5C9269] hover:bg-white hover:text-black py-3 px-6 rounded-full  text-white cursor-pointer'>
+            <button className='mt-16 md:mt-0 md:block bg-[#5C9269] hover:bg-white hover:text-black py-3 px-6 rounded-full  text-white cursor-pointer'>
               Book an Appointment
             </button>
           </a>

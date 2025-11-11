@@ -47,7 +47,7 @@ const Showcase = () => {
             <h1 className="text-[32px] md:text-[56px] text-[#112025]">
               Our Ayurvedic Experience
             </h1>
-            <span className='hidden md:block text-[16px] font-sans text-[#696969]'>At Nature Foot Care & Ayurvedic Wellness, every treatment is a journey of relaxation and healing. Rooted in Ayurveda and nature, our spa offers a serene escape to restore balance, energy, and inner peace</span>
+            <span className='hidden md:block text-[16px] font-sans text-[#696969] mt-4'>At Nature Foot Care & Ayurvedic Wellness, every treatment is a journey of relaxation and healing.</span>
             <span className='block md:hidden text-[16px] font-medium ml-2 mr-2 font-sans text-[#696969]'>At Nature Foot Care & Ayurvedic Wellness, every treatment is a journey of relaxation and healing. Rooted in Ayurveda and nature, our spa offers a serene escape to restore balance, energy, and inner peace</span>
           </div>
           {isMobile ? (
