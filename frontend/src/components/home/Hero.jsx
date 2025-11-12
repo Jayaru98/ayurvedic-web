@@ -31,7 +31,7 @@ const Hero = () => {
       });
     }, []);
   return (
-      <div className="relative h-screen md:h-screen bg-amber-50 overflow-hidden min-h-[650px]" data-aos="fade-down"> 
+      <div id="hero-section" className="relative h-screen md:h-screen bg-amber-50 overflow-hidden min-h-[650px]" data-aos="fade-down"> 
       {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-no-repeat" 

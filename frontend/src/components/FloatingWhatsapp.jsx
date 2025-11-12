@@ -11,26 +11,16 @@ const isElementInFooter = (element, footerHeight) => {
 };
 
 const FloatingWhatsapp = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-    const [isVisible, setIsVisible] = useState(!isMobile); // Initially visible on desktop, hidden on mobile
+    const [isVisible, setIsVisible] = useState(false); // Start as hidden
     const [scrollPosition, setScrollPosition] = useState(0);
     const [bottomPosition, setBottomPosition] = useState('56px');
     const location = useLocation();
 
     useEffect(() => {
-        const handleResize = () => {
-            const mobile = window.innerWidth < 768;
-            setIsMobile(mobile);
-            if (location.pathname === '/') {
-                setIsVisible(!mobile || window.pageYOffset > (document.querySelector('[class*="h-[600px]"]')?.offsetHeight || 0));
-            } else {
-                setIsVisible(true);
-            }
-        };
-
+        // This function will now be re-run on page navigation
         const handleScroll = () => {
             const footer = document.querySelector('footer'); // Assuming your footer has a 'footer' tag or a specific class
-            const heroSection = document.querySelector('[class*="h-[550px]"]'); // More robust selector for hero
+            const heroSection = document.getElementById('hero-section'); // Use the consistent ID
             const currentScrollPos = window.pageYOffset;
 
             if (footer) {
@@ -39,28 +29,27 @@ const FloatingWhatsapp = () => {
                 setBottomPosition(newBottom);
             }
 
-            // Logic for mobile visibility based on hero section
-            // This scroll logic should only apply on the homepage for mobile
-            if (isMobile && location.pathname === '/' && heroSection) {
+            // This scroll logic should apply on ALL pages with a hero section, for both web and mobile
+            if (heroSection) {
                 const heroHeight = heroSection.offsetHeight;
-                if (currentScrollPos > heroHeight) {
-                    setIsVisible(true);
-                } else {
-                    setIsVisible(false);
-                }
+                // Show only when scrolled past the hero section
+                setIsVisible(currentScrollPos > heroHeight);
             } else {
-                setIsVisible(true); // Always visible on desktop
+                setIsVisible(true); // No hero section, so always visible
             }
             setScrollPosition(currentScrollPos);
         };
 
-        window.addEventListener('resize', handleResize);
+        // Run on mount to set initial state correctly
+        handleScroll();
+
+        window.addEventListener('resize', handleScroll); // Also use handleScroll on resize
         window.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', handleScroll);
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [isMobile, location.pathname]);
+    }, [location.pathname]); // Re-run the effect when the path changes
 
     return (
         isVisible && (
@@ -71,7 +60,7 @@ const FloatingWhatsapp = () => {
             id='floating-whatsapp-button' // Add an ID for easier reference
             style={{
                 position: 'fixed', // Keep it fixed
-                bottom: isVisible ? bottomPosition : '-50px', // Use isVisible to control on-screen/off-screen position
+                bottom: isVisible ? bottomPosition : '-100px', // Use isVisible to control on-screen/off-screen position
                 right: '8px',
                 zIndex: 1000,
                 backgroundColor: '#25D366',

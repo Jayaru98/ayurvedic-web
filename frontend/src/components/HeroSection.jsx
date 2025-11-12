@@ -3,12 +3,13 @@ import Header from "./Header"
 
 export default function HeroSection({ 
   title, 
-  breadcrumb = [], 
+  breadcrumb = [],
   backgroundImage 
 }) {
   return (
     <div 
-      className="relative w-full h-[700px] md:h-[550px] flex flex-col text-white"
+      id="hero-section"
+      className="relative w-full h-[700px] md:h-[600px] flex flex-col text-white"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

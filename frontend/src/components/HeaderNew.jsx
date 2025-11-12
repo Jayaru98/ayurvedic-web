@@ -37,7 +37,7 @@ const newer = () => {
     <div className='bg-[#1D4026] md:pb-6' data-aos="fade-up" data-aos-delay="100">
         <div className='flex justify-between items-center p-4 md:p-6 md:ml-28 mr-28'>
             {/* Logo */}
-            <img src={Logo} alt="Nature Foot care logo" className='md:hidden w-18 h-18' data-aos="fade-up" data-aos-delay="300"/>
+            {/* <img src={Logo} alt="Nature Foot care logo" className='md:hidden w-18 h-18' data-aos="fade-up" data-aos-delay="300"/> */}
             <MobileMenu />
 
             <div className="hidden md:flex items-center space-x-4" >
@@ -53,6 +53,7 @@ const newer = () => {
             <div className="hidden md:flex items-center text-sm text-white">
                 <span><FaRegEnvelope className='w-5 h-5 mr-2 mt-2 font-bold' /></span>
                 <p className='mr-3 mt-2 font-normal font-sans'>ayurvedafootcarenewnature@gmail.com</p>
+                <p className='mr-6 mt-2'>|</p>
                 <span><FaPhone className='w-5 h-5 mr-2 mt-2' /></span>
                 <span className='font-normal mt-2 font-sans'>+94 74 261 0334</span>
             </div>
@@ -63,10 +64,9 @@ const newer = () => {
               <nav className="flex justify-between items-center p-6 ml-28 mr-28" >
                 <div className="flex items-center space-x-2">
                   {/* Logo  */}
-                  <img src={Logo} alt="Nature foot care logo" className=' hidden md:block w-24 h-24' data-aos="fade-up" data-aos-delay="600"/>
-                  {/* <p className='text-white hidden md:block md:text-3xl'>Nature Foot Care <br /> Ayurveda</p> */}
+                  <NavLink to="/" className='cursor-pointer'><img src={Logo} alt="Nature foot care logo" className=' hidden md:block w-24 h-24' data-aos="fade-up" data-aos-delay="600"/></NavLink>
                 </div>
-                <div className="hidden md:flex space-x-8 font-sans" data-aos="fade-up" data-aos-delay="700">
+                <div className="hidden md:flex space-x-8" data-aos="fade-up" data-aos-delay="700">
                   <NavLink to="/" className={getLinkClass} end>Home</NavLink>
                   <NavLink to="/about" className={getLinkClass}>About Us</NavLink>
                   <NavLink to="/treatments" className={getLinkClass}>Treatments</NavLink>

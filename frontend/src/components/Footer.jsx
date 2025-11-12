@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-16 md:pb-20 flex-wrap">
                 <div className="mb-4 md:mb-0 md:ml-12" >
                     <div className='flex items-center space-x-2' data-aos="fade-up" data-aos-delay="200" >
-                        <img src={Logo} alt="Nature foot care logo" className=' w-28 h-28 md:w-32 md:h-32 mt-8 -ml-3' />
+                        <a href="/"><img src={Logo} alt="Nature foot care logo" className=' w-28 h-26 md:w-32 md:h-30 mt-8 -ml-3' /></a>
                         <p className='text-white text-2xl md:text-3xl mt-5'>Nature Foot Care <br /> Ayurveda</p>
                     </div>
 
@@ -31,21 +31,21 @@ const Footer = () => {
                 </div>
 
                 <div className="text-start">
-                    <div className='mt-6 md:mt-20  '>
+                    <div className='mt-6 md:mt-30 md:ml-12'>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="700">Address</h2>
                         <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">No.57,W A Silva mawatha,  </p>
                         <p className="mb-2 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">Colombo 06 </p>
                         <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900"> Sri Lanka</p>
                     </div>
-                    <div>
+                    <div className='md:ml-12'>
                         <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="1000">Contact</h2>
-                        <p className="flex mb-3 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100"><span><FiPhone className='w-4 h-4 mr-2 mt-2' /></span>&nbsp;+94 74 261 0334</p>
+                        <p className="flex mb-3 mt-4 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100"><span><FiPhone className='w-4 h-4 mr-2 mt-2' /></span>&nbsp;+94 11 236 1136</p>
                         <p className="flex mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1200"><span><AiOutlineMail className='w-5 h-5 mr-2 mt-1 font-bold' /></span>&nbsp;ayurvedafootcarenewnature@gmail.com</p>
                     </div>
                 </div>
-                <div className='mr-12 '>
+                <div className='mr-12'>
                     <div className='text-start'>
-                        <h2 className='text-[18px] md:text-[24px] text-white mt-2 mb-6' data-aos="fade-up" data-aos-delay="1300">Explore</h2>
+                        <h2 className='text-[18px] md:text-[24px] text-white mt-12 mb-6' data-aos="fade-up" data-aos-delay="1300">Explore</h2>
                         <ul className=''>
                             <li className='mb-2 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1'>
                                 <a href="/" className="text-white/70 font-sans hover:text-white" data-aos="fade-up" data-aos-delay="1400">Home</a>

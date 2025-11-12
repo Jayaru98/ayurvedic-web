@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from '../assets/Images/Nature Foot Care Logo.png';
+import { NavLink } from 'react-router-dom';
+
 
 const mobileMenuNew = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,6 +24,9 @@ const mobileMenuNew = () => {
   return (
     <>
         {/* Mobile Menu Button - centered on mobile, hidden on desktop  */}
+         <NavLink to="/" className='cursor-pointer md:hidden'>
+            <img src={Logo} alt="Nature Foot care logo" className='w-18 h-18' />
+        </NavLink>
         {/* <div className="md:hidden text-white z-20"> */}
          <div className="md:hidden">
             <button 

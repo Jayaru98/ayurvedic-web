@@ -28,9 +28,9 @@ const Header = () => {
   return (
     <div>
         <div className='flex justify-between items-center p-4 md:p-6 md:ml-28 mr-28'>
-            {/* Logo */}
-            <img src={Logo} alt="Nature Foot care logo" className='md:hidden w-18 h-18' />
+            {/* Logo - Mobile menu */}
             <MobileMenu />
+            
 
             <div className="hidden md:flex items-center space-x-4" >
                 {/* Social Media Icons */}
@@ -55,8 +55,7 @@ const Header = () => {
       <nav className="flex justify-between items-center p-6 ml-28 mr-28" data-aos="fade-up">
         <div className="flex items-center space-x-2">
           {/* Logo  */}
-          <img src={Logo} alt="Nature foot care logo" className=' hidden md:block w-24 h-24' />
-          {/* <p className='text-white hidden md:block md:text-3xl'>Nature Foot Care <br /> Ayurveda</p> */}
+          <NavLink to="/" className='cursor-pointer'><img src={Logo} alt="Nature foot care logo" className=' hidden md:block w-24 h-24' /></NavLink>
         </div>
         <div className="hidden md:flex space-x-8">
           <NavLink to="/" className={getLinkClass} end>Home</NavLink>
