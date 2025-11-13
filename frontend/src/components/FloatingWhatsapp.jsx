@@ -23,13 +23,23 @@ const FloatingWhatsapp = () => {
             const heroSection = document.getElementById('hero-section'); // Use the consistent ID
             const currentScrollPos = window.pageYOffset;
 
+            // Check if mobile menu is open and if on Terms or Privacy Policy page
+            const isMobileMenuOpen = document.getElementById('mobile-menu-overlay');
+            // Assuming '/terms' and '/privacy-policy' are the paths for these pages
+            const isTermsOrPrivacyPage = location.pathname === '/terms' || location.pathname === '/privacy';
+
+            if (isMobileMenuOpen && isTermsOrPrivacyPage) {
+                setIsVisible(false); // Hide the icon
+                return; // Exit early, overriding other visibility logic
+            }
+
             if (footer) {
                 const footerHeight = footer.offsetHeight;
                 const newBottom = isElementInFooter(document.getElementById('floating-whatsapp-button'), footerHeight) ? '140px' : '56px'; // Adjust as needed
                 setBottomPosition(newBottom);
             }
 
-            // This scroll logic should apply on ALL pages with a hero section, for both web and mobile
+            // This scroll logic should apply on ALL pages with a hero section, for both wzyeb and mobile
             if (heroSection) {
                 const heroHeight = heroSection.offsetHeight;
                 // Show only when scrolled past the hero section
@@ -43,12 +53,23 @@ const FloatingWhatsapp = () => {
         // Run on mount to set initial state correctly
         handleScroll();
 
+        // Set up a MutationObserver to watch for the mobile menu appearing/disappearing
+        const observer = new MutationObserver(handleScroll);
+        observer.observe(document.body, {
+            childList: true, // Watch for addition/removal of nodes
+            subtree: true    // Watch descendants as well
+        });
+
         window.addEventListener('resize', handleScroll); // Also use handleScroll on resize
         window.addEventListener('scroll', handleScroll);
+
         return () => {
+            // Clean up listeners and observer
+            observer.disconnect();
             window.removeEventListener('resize', handleScroll);
             window.removeEventListener('scroll', handleScroll);
         };
+
     }, [location.pathname]); // Re-run the effect when the path changes
 
     return (

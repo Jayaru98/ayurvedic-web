@@ -63,7 +63,7 @@ const mobileMenu = () => {
                     <a 
                         className={`font-semibold block transition-color duration-200 ${currentPath === '/treatments' ? 'text-[#343929] px-20 py-1 border border-[#BECC5B] bg-[#ECD3B4] rounded-4xl' : 'text-white hover:text-teal-400'}`} 
                         href="/treatments"
-                    >Treatment</a>
+                    >Treatments</a>
                     <a 
                         className={`font-semibold block px-4 py-1 border rounded-4xl transition-color duration-200 ${currentPath === '/contact' ? 'text-[#343929] px-20 py-1 border border-[#BECC5B] bg-[#ECD3B4] rounded-4xl' : 'border-[#BECC5B] text-white hover:text-teal-400'}`} 
                         href="/contact"
