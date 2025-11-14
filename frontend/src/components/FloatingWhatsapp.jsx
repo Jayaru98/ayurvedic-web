@@ -35,7 +35,7 @@ const FloatingWhatsapp = () => {
 
             if (footer) {
                 const footerHeight = footer.offsetHeight;
-                const newBottom = isElementInFooter(document.getElementById('floating-whatsapp-button'), footerHeight) ? '140px' : '56px'; // Adjust as needed
+                const newBottom = isElementInFooter(document.getElementById('floating-whatsapp-button'), footerHeight) ? '80px' : '56px'; // Adjust as needed
                 setBottomPosition(newBottom);
             }
 

@@ -3,8 +3,10 @@ import Logo from '../assets/Images/Nature Foot Care Logo.png';
 import { FaFacebookF } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { FaRegClock } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa6";
+// import { FaPhone } from "react-icons/fa6";
+import { FiPhone } from "react-icons/fi";
 import { FaRegEnvelope } from "react-icons/fa6";
+import { IoLocationOutline } from "react-icons/io5";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -35,15 +37,15 @@ const FooterNew = () => {
                     </div>
     
                     <div className="text-start">
-                        <div className='mt-6 md:mt-28 md:ml-12'>
+                        <div className='mt-6 md:mt-30 md:ml-12'>
                             <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="700">Address</h2>
-                            <p className="mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800">No.57, W A Silva mawatha, </p>
-                            <p className="mb-2 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900">Colombo 06 </p>
-                            <p className="mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900"> Sri Lanka</p>
+                            <p className="flex mb-2 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="800"><IoLocationOutline className='h-5 w-5 mr-2 mt-1'/>&nbsp; No.57,W A Silva mawatha, Colombo 06  </p>
+                            {/* <p className="mb-2 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900"> </p> */}
+                            <p className="flex mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="900"><IoLocationOutline className='h-5 w-5 mr-2 mt-1'/>&nbsp; No.8 A, Vajira road, bambalapitya, Colombo 04</p>
                         </div>
                         <div className='md:ml-12'>
                             <h2 className='text-[18px] md:text-[24px] text-white' data-aos="fade-up" data-aos-delay="1000">Contact</h2>
-                            <p className="flex mb-3 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100"><span><FaPhone className='w-4 h-4 mr-2 mt-2' /></span>&nbsp;+94 11 236 1136</p>
+                            <p className="flex mb-3 mt-6 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1100"><span><FiPhone className='w-4 h-4 mr-2 mt-2' /></span>&nbsp;+94 11 236 1136</p>
                             <p className="flex mb-8 text-white/70 font-sans" data-aos="fade-up" data-aos-delay="1200"><span><FaRegEnvelope className='w-5 h-5 mr-2 mt-1 font-bold' /></span>&nbsp;ayurvedafootcarenewnature@gmail.com</p>
                         </div>
                     </div>

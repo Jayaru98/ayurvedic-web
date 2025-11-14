@@ -68,9 +68,10 @@ return (
                 <MapPin size={24} className="text-[#09283B]" />
               </div>
               <div className="flex flex-col mb-10">
-                <p className='text-[14px]'>Visit Us</p>
-                <p className='text-[14px]'>No.57, W A Silva mawatha,
+                <p className='text-[14px]'>Visit Us At</p>
+                <p className='text-[14px]'>- No.57, W A Silva mawatha,
 Colombo 06 <br /> </p>
+                <p className='text-[14px] mt-1'>- No.8 A, Vajira road, bambalapitya, Colombo 04 <br /></p>
                 <p className='text-[12px] text-gray-400'>Schedule an appointment</p>
               </div>
             </div>
